@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AbstractService class">
+    <HelpKINode Title="AbstractService Class" Url="html/d6785838-162a-a33e-d8b9-3b17787b3e7d.htm" />
+    <HelpKINode Title="about AbstractService class" Url="html/d6785838-162a-a33e-d8b9-3b17787b3e7d.htm" />
+    <HelpKINode Title="constructor" Url="html/fc0ab918-6c0b-af95-b5dc-bad26d96baad.htm" />
+    <HelpKINode Title="fields" Url="html/be1d1fab-bdcc-49e2-0143-4964067d4327.htm" />
+    <HelpKINode Title="methods" Url="html/a845c24b-5712-d860-d736-56e786c63ab2.htm" />
+    <HelpKINode Title="properties" Url="html/46ca01bd-045d-9cee-38e0-d62187b26aff.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AbstractService.AbstractService constructor" Url="html/fc0ab918-6c0b-af95-b5dc-bad26d96baad.htm" />
+  <HelpKINode Title="AbstractService.AuthMethod enumeration" Url="html/e1a708c1-57e2-b49b-5789-d9520d53df8e.htm" />
+  <HelpKINode Title="AbstractService.DataFormat enumeration" Url="html/b8ca220a-01a9-86dc-1f54-806e6732d5ca.htm" />
+  <HelpKINode Title="AbstractService.dataFormat field" Url="html/69d46b8b-0de0-7898-ec1e-7a9655eee997.htm" />
+  <HelpKINode Title="AbstractService.Destroy method" Url="html/1f3b82bc-dd6a-6c62-2ca3-3a7f9a5374d8.htm" />
+  <HelpKINode Title="AbstractService.DoMethod method" Url="html/3f49f0c9-312d-082d-215d-ef852f169c66.htm" />
+  <HelpKINode Title="AbstractService.GetSystemDateTimeMillis method" Url="html/85860578-8389-29ec-9478-e793c1ec2f44.htm" />
+  <HelpKINode Title="AbstractService.NO_CONTENT field" Url="html/2bb2a271-e39f-6fc8-45ea-c4fa718c6ee9.htm" />
+  <HelpKINode Title="AbstractService.PreferredFormat property" Url="html/1de81059-5951-f287-cc46-a1cbade955e9.htm" />
+  <HelpKINode Title="AbstractService.ServiceIdentifier property" Url="html/a9221ae1-60b1-2d5f-d0d2-2c85d432a4cf.htm" />
+  <HelpKINode Title="AbstractService.SystemDateTime property" Url="html/ac35b790-f021-7511-939f-644000d3025d.htm" />
+  <HelpKINode Title="AbstractService.UseOAuth1 method" Url="html/20af5db6-c8ef-4bcf-b456-8977b6156b03.htm" />
+  <HelpKINode Title="AbstractService.UseOAuth2 method" Url="html/73ec14dd-cddc-3896-47d0-000f2d3b18d3.htm" />
+  <HelpKINode Title="AccessToken property" Url="html/b57ba436-1aa7-fbed-c7f7-4041509d5a9e.htm" />
+  <HelpKINode Title="AdminUserId property" Url="html/98ce3d9f-f640-b6f0-e366-e75bccf7b273.htm" />
+  <HelpKINode Title="AdminUsername property" Url="html/257d1dc6-dfe7-dc89-18a2-468e1096d03c.htm" />
+  <HelpKINode Title="AnswerQuestion method" Url="html/b8be84e1-d7b7-7608-9037-018ff7ff07b9.htm" />
+  <HelpKINode Title="ApplicationId property">
+    <HelpKINode Title="ConfigManager.ApplicationId Property " Url="html/a2d8718e-3d52-a447-8350-3ed7f70d7298.htm" />
+    <HelpKINode Title="OAuth1SignatureConfig.ApplicationId Property " Url="html/5be29cb5-b17a-d15d-b20a-9853774ff311.htm" />
+    <HelpKINode Title="OAuth2AssertionConfig.ApplicationId Property " Url="html/fb4b9d8a-80b2-4c41-77eb-8c135a3aab4e.htm" />
+    <HelpKINode Title="OAuth2PasswordConfig.ApplicationId Property " Url="html/54acd0ce-f076-a06b-1d25-951a8746fcd8.htm" />
+    <HelpKINode Title="OAuthConfig.ApplicationId Property " Url="html/31c5e0c0-52c7-6f40-c0ca-9a15416d2655.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApplicationName property">
+    <HelpKINode Title="ConfigManager.ApplicationName Property " Url="html/38fec6dc-e1fa-5384-4fd5-d56ccd6a8dca.htm" />
+    <HelpKINode Title="OAuth2AssertionConfig.ApplicationName Property " Url="html/a63814d3-1462-6392-31c7-859911a4bb8a.htm" />
+    <HelpKINode Title="OAuthConfig.ApplicationName Property " Url="html/5aaacfb6-d68c-508d-b482-8b98b1dda0d7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuthHelper class">
+    <HelpKINode Title="AuthHelper Class" Url="html/e746d351-985a-da6c-a7ae-7bcb1dcbf139.htm" />
+    <HelpKINode Title="about AuthHelper class" Url="html/e746d351-985a-da6c-a7ae-7bcb1dcbf139.htm" />
+    <HelpKINode Title="methods" Url="html/36445dc4-6f74-c07a-6246-407af792163f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuthHelper.GenerateCmac method" Url="html/d78856a9-485b-6b1d-a0d7-a0f058f6395f.htm" />
+  <HelpKINode Title="AuthHelper.GetNonce method" Url="html/abbc1de2-554c-1e1b-cc4e-1304f2c76231.htm" />
+  <HelpKINode Title="BASE64 enumeration member" Url="html/1eeca95f-83e9-ba59-9c92-34296b0fbed0.htm" />
+  <HelpKINode Title="BasicService class">
+    <HelpKINode Title="BasicService Class" Url="html/157f6a70-5449-5d1c-8d5e-6b0a09299461.htm" />
+    <HelpKINode Title="about BasicService class" Url="html/157f6a70-5449-5d1c-8d5e-6b0a09299461.htm" />
+    <HelpKINode Title="constructor" Url="html/5f8f2bd5-a496-7eeb-c6b7-9a290bf27e77.htm" />
+    <HelpKINode Title="fields" Url="html/3386ff41-9890-6b9d-7720-2126e586ac75.htm" />
+    <HelpKINode Title="methods" Url="html/df1f1600-8d97-88cc-1a0e-3823d152162a.htm" />
+    <HelpKINode Title="properties" Url="html/f1d0f6b1-7e9d-891d-3b6f-2cf24d017429.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BasicService.BasicService constructor" Url="html/5f8f2bd5-a496-7eeb-c6b7-9a290bf27e77.htm" />
+  <HelpKINode Title="BasicService.DoMethod method" Url="html/b1f4ff01-c376-fa80-e5fd-04aada1cd78e.htm" />
+  <HelpKINode Title="BasicService.ServiceIdentifier property" Url="html/46244878-a50e-b9a0-9010-fb59b9397ecc.htm" />
+  <HelpKINode Title="BinaryContent property" Url="html/3cde58bc-1c2e-eab2-b676-0beee7ed3b9a.htm" />
+  <HelpKINode Title="Build(Of T) method" Url="html/fd0ff636-b96c-2f64-5365-95b3c25d4505.htm" />
+  <HelpKINode Title="Build&lt;T&gt; method" Url="html/fd0ff636-b96c-2f64-5365-95b3c25d4505.htm" />
+  <HelpKINode Title="ClientString property">
+    <HelpKINode Title="ConfigManager.ClientString Property " Url="html/f4725958-1bf6-3a91-c752-b9974a528117.htm" />
+    <HelpKINode Title="OAuth2AssertionConfig.ClientString Property " Url="html/15286f0a-ab39-1560-deba-f0d80e686d69.htm" />
+    <HelpKINode Title="OAuth2PasswordConfig.ClientString Property " Url="html/2ae18741-a761-afda-f7ef-dff7f9d0683b.htm" />
+    <HelpKINode Title="OAuthConfig.ClientString Property " Url="html/6733c9e4-674d-2943-c180-0dd5c2da5816.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Content namespace" Url="html/6614026b-013e-90fb-1170-adac44a0e45e.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Content.ContentService class" Url="html/145fa3e3-1ef9-14ce-f872-02857ff728b5.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Core namespace" Url="html/b4229741-2bc0-09b4-a369-8aa0be1f25a4.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Core.AbstractService class" Url="html/d6785838-162a-a33e-d8b9-3b17787b3e7d.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Core.AbstractService.AuthMethod enumeration" Url="html/e1a708c1-57e2-b49b-5789-d9520d53df8e.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Core.AbstractService.DataFormat enumeration" Url="html/b8ca220a-01a9-86dc-1f54-806e6732d5ca.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Core.BasicService class" Url="html/157f6a70-5449-5d1c-8d5e-6b0a09299461.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Core.Response class" Url="html/73b9874b-ed89-f76c-a9af-70dad816920e.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Exam namespace" Url="html/791ec00e-f400-d6ff-7a52-4ede7472c018.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Exam.ExamService class" Url="html/98525ac0-cf0d-dad7-a3f5-7d7b846cd0ac.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Grades namespace" Url="html/8dc6a912-04fc-e523-b64e-557de089a405.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Grades.GradeService class" Url="html/29752b75-3fee-c7ba-3d37-ae3a7eb96111.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth namespace" Url="html/d90520e8-fb19-d468-b23e-3ffda495ed92.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.Config namespace" Url="html/e8a652d2-bb20-76af-3b95-1f9b93f7fe63.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.Config.OAuth1SignatureConfig class" Url="html/fde65613-c2fb-5c90-3a2a-f61581edd8ed.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.Config.OAuth2AssertionConfig class" Url="html/f3adeae2-9631-2ba6-b94b-f25d4eaba30f.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.Config.OAuth2PasswordConfig class" Url="html/9b395da2-5230-7a06-1072-1bfb1f39247e.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.Config.OAuthConfig class" Url="html/00fbd25f-45c6-2663-0129-7d767e2e5ece.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.OAuth1SignatureService class" Url="html/3d2d1dd6-7827-dbb0-fced-365e40eed2d1.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.OAuth2AssertionService class" Url="html/c3ae4afa-dd0a-cf84-04a9-b0392103055e.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.OAuth2PasswordService class" Url="html/d370625a-aaac-3b2d-3a9f-70b7885a558e.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.OAuthService interface" Url="html/7212fd81-7fc7-0603-a6f8-40a36d00ea67.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.OAuthServiceFactory class" Url="html/f9530a88-8000-586b-0503-41814b3f5fb9.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.Request namespace" Url="html/b373adda-9380-c745-5cca-8e66ea486cc1.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.Request.OAuth1Request class" Url="html/c4e47b6c-5879-48b5-a138-64f8635b03c6.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.Request.OAuth2Request class" Url="html/d0048280-1ca0-55c3-9893-fac75b71aaa7.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.OAuth.Request.OAuthRequest interface" Url="html/40660cee-fa00-3ec9-3ef3-c17320af32db.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Utility namespace" Url="html/c4053315-eb4f-33e0-5f52-e94101b1c456.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Utility.AuthHelper class" Url="html/e746d351-985a-da6c-a7ae-7bcb1dcbf139.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Utility.ConfigManager class" Url="html/c671e534-f799-15d0-02d1-e883e81b97bf.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Utility.ConfigUtil class" Url="html/2514227e-457c-3662-eebc-9d3966788fa7.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Utility.DateTimeHelper class" Url="html/29f26fcf-d7e0-433c-d10b-7f97c16afe76.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Utility.EncodingType enumeration" Url="html/1eeca95f-83e9-ba59-9c92-34296b0fbed0.htm" />
+  <HelpKINode Title="Com.Pearson.Pdn.Learningstudio.Utility.HttpMethod enumeration" Url="html/47499281-1270-a738-8514-6eb7d43e0582.htm" />
+  <HelpKINode Title="CompleteExamAttempt method" Url="html/f1aca824-b038-c16d-cde7-26ebe91b89a3.htm" />
+  <HelpKINode Title="ConfigManager class">
+    <HelpKINode Title="ConfigManager Class" Url="html/c671e534-f799-15d0-02d1-e883e81b97bf.htm" />
+    <HelpKINode Title="about ConfigManager class" Url="html/c671e534-f799-15d0-02d1-e883e81b97bf.htm" />
+    <HelpKINode Title="constructor" Url="html/7106ffce-e0ec-90f8-3d70-a59363e38883.htm" />
+    <HelpKINode Title="properties" Url="html/e7ac6b27-2db8-f53e-0d55-bfdd4d5a9884.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConfigManager.AdminUserId property" Url="html/98ce3d9f-f640-b6f0-e366-e75bccf7b273.htm" />
+  <HelpKINode Title="ConfigManager.AdminUsername property" Url="html/257d1dc6-dfe7-dc89-18a2-468e1096d03c.htm" />
+  <HelpKINode Title="ConfigManager.ApplicationId property" Url="html/a2d8718e-3d52-a447-8350-3ed7f70d7298.htm" />
+  <HelpKINode Title="ConfigManager.ApplicationName property" Url="html/38fec6dc-e1fa-5384-4fd5-d56ccd6a8dca.htm" />
+  <HelpKINode Title="ConfigManager.ClientString property" Url="html/f4725958-1bf6-3a91-c752-b9974a528117.htm" />
+  <HelpKINode Title="ConfigManager.ConfigManager constructor" Url="html/7106ffce-e0ec-90f8-3d70-a59363e38883.htm" />
+  <HelpKINode Title="ConfigManager.ConsumerKey property" Url="html/dc7981a5-af83-6f03-e56c-e783f7d73adc.htm" />
+  <HelpKINode Title="ConfigManager.ConsumerSecret property" Url="html/b443e1b6-a005-d480-8702-41a2da9a691b.htm" />
+  <HelpKINode Title="ConfigManager.CourseId property" Url="html/db84ad7d-b8fe-3511-0c87-031734cfb6a6.htm" />
+  <HelpKINode Title="ConfigManager.EssayQuestionType property" Url="html/20e1122c-1767-e08c-066c-122e23c86bd4.htm" />
+  <HelpKINode Title="ConfigManager.ExamId property" Url="html/7f8f3057-33aa-d707-a7ff-dc87937ed25a.htm" />
+  <HelpKINode Title="ConfigManager.FillInTheBlankQuestionType property" Url="html/71387fbc-e04f-2038-2bfe-ab50b969af2e.htm" />
+  <HelpKINode Title="ConfigManager.GradebookItemId property" Url="html/577e4806-683d-2804-0613-0f906ed87091.htm" />
+  <HelpKINode Title="ConfigManager.GradeCustomerCategoriesId property" Url="html/94c1b1ea-4ea2-09dd-8f10-7c01baab8184.htm" />
+  <HelpKINode Title="ConfigManager.GradeCustomerCategoriesMultiple property" Url="html/3da9905d-9193-89f7-7a9e-5110ce1fb303.htm" />
+  <HelpKINode Title="ConfigManager.GradeCustomerCategoriesSingle property" Url="html/5097240c-9d2b-d078-89ce-0428f1216f30.htm" />
+  <HelpKINode Title="ConfigManager.GradeCustomerCategoriesURL property" Url="html/6953be39-8669-9c1f-d656-7e0e8d570de1.htm" />
+  <HelpKINode Title="ConfigManager.ItemId property" Url="html/574c1dae-7c28-1b83-6f48-cb7e65727875.htm" />
+  <HelpKINode Title="ConfigManager.ManyMultipleChoiceQuestionType property" Url="html/534e6e24-0573-8413-964f-d9303e204d76.htm" />
+  <HelpKINode Title="ConfigManager.MatchingQuestionType property" Url="html/49d8a357-0501-81aa-9b06-ce8cb5cf078f.htm" />
+  <HelpKINode Title="ConfigManager.MsofficedocumentContentPath property" Url="html/546e8624-bf6d-e2bf-0475-dc9b5dd81ee0.htm" />
+  <HelpKINode Title="ConfigManager.MsofficedocumentId property" Url="html/042ecc77-86c5-88a8-7fe7-f4305327bfa2.htm" />
+  <HelpKINode Title="ConfigManager.MultimediaContentPath property" Url="html/444448ac-b553-6e98-248f-f888d6012a98.htm" />
+  <HelpKINode Title="ConfigManager.MultimediaId property" Url="html/e2f10745-a316-771a-77d6-e20f010009f3.htm" />
+  <HelpKINode Title="ConfigManager.MultiplechoiceQuestionType property" Url="html/68fa05fc-438f-a80d-4d32-d5bb0db01629.htm" />
+  <HelpKINode Title="ConfigManager.Password property" Url="html/b8ba72bf-2377-77ef-a53c-874fda54daeb.htm" />
+  <HelpKINode Title="ConfigManager.PathCoursesGradebookCustomCategories property" Url="html/c6f67efb-0efb-d9cc-6551-9d97d40dcb45.htm" />
+  <HelpKINode Title="ConfigManager.PathCoursesGradebookCustomCategories_ property" Url="html/f89a80b1-1010-181e-2fa7-f851582788e5.htm" />
+  <HelpKINode Title="ConfigManager.PathCoursesMsOfficeDocumentsOriginalDocument property" Url="html/bc8402c1-10ad-23a8-7de5-7ea6be2eba90.htm" />
+  <HelpKINode Title="ConfigManager.ProtectedExamId property" Url="html/8eb97858-2afd-d1c6-f206-71950c239ea3.htm" />
+  <HelpKINode Title="ConfigManager.ProtectedExamPassword property" Url="html/22b1af35-4d3c-8131-dd0a-14dfc993dec2.htm" />
+  <HelpKINode Title="ConfigManager.ResponseId property" Url="html/d74f10e3-9244-1654-bd2e-e5951751d71a.htm" />
+  <HelpKINode Title="ConfigManager.SectionId property" Url="html/ebbd49ca-bed0-9402-6494-9f32d8990d36.htm" />
+  <HelpKINode Title="ConfigManager.ShortAnswerQuestionType property" Url="html/e1a71336-2ef0-4073-9ac2-060addd1a13e.htm" />
+  <HelpKINode Title="ConfigManager.StudentUserId property" Url="html/15b22b68-3008-6ae4-c19d-adf4141b9677.htm" />
+  <HelpKINode Title="ConfigManager.StudentUsername property" Url="html/265df8f2-99f0-c99b-d85e-18f1881521e3.htm" />
+  <HelpKINode Title="ConfigManager.TaUserId property" Url="html/b54ccd99-206c-f902-f4e0-1c2c52b72aa1.htm" />
+  <HelpKINode Title="ConfigManager.TaUsername property" Url="html/d1b4d5e3-2326-b71c-7d7f-73838a97f267.htm" />
+  <HelpKINode Title="ConfigManager.TeacherPassword property" Url="html/c3766805-7929-7071-9ffb-e3a63fae2609.htm" />
+  <HelpKINode Title="ConfigManager.TeacherUserId property" Url="html/ab30b708-b992-de8c-523f-47497a0b0ce6.htm" />
+  <HelpKINode Title="ConfigManager.TeacherUsername property" Url="html/db342202-0be5-7ce3-5a7d-93f6d47ba73b.htm" />
+  <HelpKINode Title="ConfigManager.ThreadId property" Url="html/2329c48a-53cb-373a-b497-f3a85cb5228d.htm" />
+  <HelpKINode Title="ConfigManager.TopicId property" Url="html/8a7a887c-cb46-47b5-a645-9f5be3ecca67.htm" />
+  <HelpKINode Title="ConfigManager.TrueFalseQuestionType property" Url="html/1de672e0-3f93-4f7a-cfa6-fafe86b1239b.htm" />
+  <HelpKINode Title="ConfigManager.UnitId property" Url="html/9ce31563-c275-4177-d7eb-cf8df9ce0835.htm" />
+  <HelpKINode Title="ConfigManager.Username property" Url="html/5de3f2c8-625f-bdfa-6d60-9f07fc4747ea.htm" />
+  <HelpKINode Title="ConfigManager.WebcontentuploadContentPath property" Url="html/7edc4102-0eb5-a64b-9bd8-675aef25b874.htm" />
+  <HelpKINode Title="ConfigManager.WebcontentuploadId property" Url="html/e6970a5f-3b64-ad6a-cc65-7aa3b88fb7a4.htm" />
+  <HelpKINode Title="configuration field" Url="html/be6c83ec-956d-0c5b-6bf1-9e2ac9bdf859.htm" />
+  <HelpKINode Title="ConfigUtil class">
+    <HelpKINode Title="ConfigUtil Class" Url="html/2514227e-457c-3662-eebc-9d3966788fa7.htm" />
+    <HelpKINode Title="about ConfigUtil class" Url="html/2514227e-457c-3662-eebc-9d3966788fa7.htm" />
+    <HelpKINode Title="constructor" Url="html/831ce59d-df38-1470-646e-5c15b1a1144d.htm" />
+    <HelpKINode Title="methods" Url="html/2bccc7bd-a61f-775a-8e97-89c038eca056.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConfigUtil.ConfigUtil constructor" Url="html/831ce59d-df38-1470-646e-5c15b1a1144d.htm" />
+  <HelpKINode Title="ConfigUtil.GetConfigurationString method" Url="html/fa3a368d-fc59-b2f2-a7ae-e402cddebb5d.htm" />
+  <HelpKINode Title="ConsumerKey property">
+    <HelpKINode Title="ConfigManager.ConsumerKey Property " Url="html/dc7981a5-af83-6f03-e56c-e783f7d73adc.htm" />
+    <HelpKINode Title="OAuth1SignatureConfig.ConsumerKey Property " Url="html/0747bfa5-f9db-0732-2119-514c05520a2a.htm" />
+    <HelpKINode Title="OAuth2AssertionConfig.ConsumerKey Property " Url="html/f7bbc091-c890-3e75-0733-72ac2a58de8c.htm" />
+    <HelpKINode Title="OAuthConfig.ConsumerKey Property " Url="html/c726ed37-4c72-cf0c-b82a-4f8965d2e33a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConsumerSecret property">
+    <HelpKINode Title="ConfigManager.ConsumerSecret Property " Url="html/b443e1b6-a005-d480-8702-41a2da9a691b.htm" />
+    <HelpKINode Title="OAuth1SignatureConfig.ConsumerSecret Property " Url="html/0a2181ad-d728-43a4-2e04-ec8d2962965e.htm" />
+    <HelpKINode Title="OAuth2AssertionConfig.ConsumerSecret Property " Url="html/1d1019e8-eed3-dd9f-8a86-b6eba417ddd7.htm" />
+    <HelpKINode Title="OAuthConfig.ConsumerSecret Property " Url="html/54f812d5-cc13-29b5-4c9b-46f5a378a0a9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Content property" Url="html/4b8bb965-e940-7637-06fb-30e720bec2b4.htm" />
+  <HelpKINode Title="ContentService class">
+    <HelpKINode Title="ContentService Class" Url="html/145fa3e3-1ef9-14ce-f872-02857ff728b5.htm" />
+    <HelpKINode Title="about ContentService class" Url="html/145fa3e3-1ef9-14ce-f872-02857ff728b5.htm" />
+    <HelpKINode Title="constructor" Url="html/f89e93d9-27cd-c7cc-6f04-d1603303379e.htm" />
+    <HelpKINode Title="fields" Url="html/fa6a31db-1a6e-6e2a-6b0c-6f0ab9790ac1.htm" />
+    <HelpKINode Title="methods" Url="html/a645a79a-82a1-1dee-528b-af8618c0d6c3.htm" />
+    <HelpKINode Title="properties" Url="html/eb12f4c9-054e-5d16-2aa0-314c0b629384.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ContentService.ContentService constructor" Url="html/f89e93d9-27cd-c7cc-6f04-d1603303379e.htm" />
+  <HelpKINode Title="ContentService.CreateThreadedDiscussionResponse method" Url="html/2e240f30-f290-66f5-b808-862457d9e8a1.htm" />
+  <HelpKINode Title="ContentService.DeleteThreadedDiscussionResponse method" Url="html/c819d615-ee22-8dbb-e5ba-ecbf998e9166.htm" />
+  <HelpKINode Title="ContentService.GetItem method" Url="html/67da5b51-cd3e-5652-23f2-c4353f20fd01.htm" />
+  <HelpKINode Title="ContentService.GetItemContent method" Url="html/5844fae2-246c-1a02-3f40-d5a8ca934c64.htm" />
+  <HelpKINode Title="ContentService.GetItemHierarchy method" Url="html/29e2763f-0d6f-c949-0bf8-67f431d0c491.htm" />
+  <HelpKINode Title="ContentService.GetItemLinkDetails method" Url="html/368c421f-994b-33cc-74dc-7b8b95332437.htm" />
+  <HelpKINode Title="ContentService.GetItems method" Url="html/1055fe6b-a0f2-f914-d482-b437c58b0ecf.htm" />
+  <HelpKINode Title="ContentService.GetLastThreadedDiscussionResponse method" Url="html/38c6cdf5-89a8-d583-d002-25c3afe8d6e4.htm" />
+  <HelpKINode Title="ContentService.GetMsOfficeDocument method" Url="html/92f8c050-0e8f-49ff-6244-812e0d20610d.htm" />
+  <HelpKINode Title="ContentService.GetMsOfficeDocumentContent method" Url="html/868df344-a8bc-59f3-92bd-8172e39b9772.htm" />
+  <HelpKINode Title="ContentService.GetMsOfficeDocumentOriginal method" Url="html/0c65e409-2c2a-0a01-42ad-8d54c04f8dc4.htm" />
+  <HelpKINode Title="ContentService.GetMsOfficeDocuments method" Url="html/7330b292-fb7b-5b69-0723-2d244281e6aa.htm" />
+  <HelpKINode Title="ContentService.GetTextMultimedia method" Url="html/69071471-1591-3946-3dff-7bea01307de5.htm" />
+  <HelpKINode Title="ContentService.GetTextMultimedias method" Url="html/e2a2de34-a230-4642-d77d-42203a029b1b.htm" />
+  <HelpKINode Title="ContentService.GetTextMultimediasContent method" Url="html/ce87b094-86b5-64e0-204e-6867198395f2.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionResponse method" Url="html/6cce1496-73bf-1d07-e45c-88b8c5ef20ef.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionResponseAndAuthorComposite method" Url="html/d10fa139-74d7-dd10-c3c3-fda68fa8c585.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionResponseAuthor method" Url="html/a5c44e85-2ae4-6d1a-e92a-92bb81412a04.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionResponseBranch method" Url="html/488b4c30-f575-b4b3-6eb7-abfb1836ec6f.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionResponseCount method" Url="html/02c34e13-5b4b-2863-cb77-489319bbf668.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionResponseHierarchy method" Url="html/aacf4ac5-bc1e-9de8-e91e-4daad654cea0.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionResponseReadStatus method" Url="html/b5a1917d-cb7c-9650-bf58-f9203ead90b7.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionResponses method" Url="html/8755be26-55d9-56c6-a833-4ec3d4fc666e.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussions method" Url="html/db51df64-7e8e-c462-ac67-e1c2de2729fa.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionTopic method" Url="html/81b2ef8d-5068-9ed3-5af0-d5433bb0b5fd.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionTopicHierarchy method" Url="html/ae233747-4564-6f16-3578-fd7437728973.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionTopicResponseAndAuthorComposite method" Url="html/fcafd78d-7fe5-022a-c257-02689efc702f.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionTopicResponseCount method" Url="html/072c032c-8a4a-fe20-8283-054dd12823b9.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionTopics method" Url="html/257d891a-8e6a-3c7f-d531-9e3bdf867e67.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionTopicUserViewResponses method" Url="html/899a2682-b322-3c98-8c81-25159bc3d79f.htm" />
+  <HelpKINode Title="ContentService.GetThreadedDiscussionUserViewResponses method" Url="html/eccc7650-b99a-1123-3033-464be3cbf539.htm" />
+  <HelpKINode Title="ContentService.GetUserItemHierarchy method" Url="html/7e01b186-ed50-5d8e-8b24-559aa0c0e819.htm" />
+  <HelpKINode Title="ContentService.GetUserItems method" Url="html/a8f8b509-9407-6870-31e3-6b8e02a20899.htm" />
+  <HelpKINode Title="ContentService.GetWebContentUpload method" Url="html/59d0ce5c-6edd-f919-6a6d-4794281a25ea.htm" />
+  <HelpKINode Title="ContentService.GetWebContentUploadContent method" Url="html/5a6ffb39-6e3b-edb4-7abe-fe8e1bd2261c.htm" />
+  <HelpKINode Title="ContentService.GetWebContentUploadOriginal method" Url="html/61fa5eb4-a8ff-3766-2df8-071f4b9fb3be.htm" />
+  <HelpKINode Title="ContentService.GetWebContentUploads method" Url="html/400a187a-09ed-c434-ec63-2a48a19d28bc.htm" />
+  <HelpKINode Title="ContentService.ServiceIdentifier property" Url="html/d41f4443-ac81-ea59-49c5-8a892b7e1a44.htm" />
+  <HelpKINode Title="ContentService.UpdateThreadedDiscussionResponseReadStatus method" Url="html/4fe8d312-64e2-8bfa-c70e-4060957b0843.htm" />
+  <HelpKINode Title="ContentType property" Url="html/cbec871b-7e0c-d23f-4082-4a06993b612d.htm" />
+  <HelpKINode Title="CourseId property" Url="html/db84ad7d-b8fe-3511-0c87-031734cfb6a6.htm" />
+  <HelpKINode Title="CreateCustomGradebookCategory method" Url="html/fdfa4012-7ae3-77bc-2965-777d211a106c.htm" />
+  <HelpKINode Title="CreateCustomGradebookCategoryAndItem method" Url="html/08578fe9-220a-f67a-a2f9-3c893f57f968.htm" />
+  <HelpKINode Title="CreateCustomGradebookItem method" Url="html/f82c6693-c2df-8e7d-03a5-707973edf8c4.htm" />
+  <HelpKINode Title="CreateExamAttempt method" Url="html/442d4f4e-de9b-ed90-8fc4-0ae059915bf9.htm" />
+  <HelpKINode Title="CreateGrade method" Url="html/b97e5c9b-3d28-2424-5662-d4facc6752f8.htm" />
+  <HelpKINode Title="CreateGradebookItemGrade method" Url="html/22fa1449-d667-22a5-8c74-94e1ace24add.htm" />
+  <HelpKINode Title="CreateThreadedDiscussionResponse method" Url="html/2e240f30-f290-66f5-b808-862457d9e8a1.htm" />
+  <HelpKINode Title="CreateUserExam method" Url="html/79633bd1-0ddf-3b75-51be-ac86ce716343.htm" />
+  <HelpKINode Title="CreationTime property" Url="html/d62e61f5-f619-6051-1bca-731e6e5d241e.htm" />
+  <HelpKINode Title="CurrentUnixTimeMilliSeconds method" Url="html/a3aea755-8327-0904-5fdd-302fcff3c852.htm" />
+  <HelpKINode Title="dataFormat field" Url="html/69d46b8b-0de0-7898-ec1e-7a9655eee997.htm" />
+  <HelpKINode Title="DateTimeHelper class">
+    <HelpKINode Title="DateTimeHelper Class" Url="html/29f26fcf-d7e0-433c-d10b-7f97c16afe76.htm" />
+    <HelpKINode Title="about DateTimeHelper class" Url="html/29f26fcf-d7e0-433c-d10b-7f97c16afe76.htm" />
+    <HelpKINode Title="methods" Url="html/a61eef5a-c403-83f3-a432-ffecd9fe2f9c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DateTimeHelper.CurrentUnixTimeMilliSeconds method" Url="html/a3aea755-8327-0904-5fdd-302fcff3c852.htm" />
+  <HelpKINode Title="DateTimeHelper.GetTimestamp method" Url="html/57de2677-53df-6cc4-7f80-35822c898a95.htm" />
+  <HelpKINode Title="DELETE enumeration member" Url="html/47499281-1270-a738-8514-6eb7d43e0582.htm" />
+  <HelpKINode Title="DeleteCustomGradebookCategory method" Url="html/9559cd4f-6df6-3a91-84a7-5f071b8da203.htm" />
+  <HelpKINode Title="DeleteCustomGradebookItem method" Url="html/24125660-efad-1303-b463-eefbd740439b.htm" />
+  <HelpKINode Title="DeleteGrade method" Url="html/f9ea1e4a-1d02-f644-61d2-f97ca2e7c7c6.htm" />
+  <HelpKINode Title="DeleteGradebookItemGrade method" Url="html/97f21eb4-a81f-6571-8905-39dd6f19a293.htm" />
+  <HelpKINode Title="DeleteQuestionAnswer method" Url="html/89a17419-50d6-6856-4601-7332bf5a7512.htm" />
+  <HelpKINode Title="DeleteThreadedDiscussionResponse method" Url="html/c819d615-ee22-8dbb-e5ba-ecbf998e9166.htm" />
+  <HelpKINode Title="DeleteUserExam method" Url="html/75c47519-1eda-0ad7-ae73-0974a9fabbf9.htm" />
+  <HelpKINode Title="Destroy method" Url="html/1f3b82bc-dd6a-6c62-2ca3-3a7f9a5374d8.htm" />
+  <HelpKINode Title="DoMethod method">
+    <HelpKINode Title="AbstractService.DoMethod Method " Url="html/3f49f0c9-312d-082d-215d-ef852f169c66.htm" />
+    <HelpKINode Title="BasicService.DoMethod Method " Url="html/b1f4ff01-c376-fa80-e5fd-04aada1cd78e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EncodingType enumeration" Url="html/1eeca95f-83e9-ba59-9c92-34296b0fbed0.htm" />
+  <HelpKINode Title="Error property" Url="html/3c191733-197b-7980-16e9-9bbfe658be78.htm" />
+  <HelpKINode Title="EssayQuestionType property" Url="html/20e1122c-1767-e08c-066c-122e23c86bd4.htm" />
+  <HelpKINode Title="ExamId property" Url="html/7f8f3057-33aa-d707-a7ff-dc87937ed25a.htm" />
+  <HelpKINode Title="ExamService class">
+    <HelpKINode Title="ExamService Class" Url="html/98525ac0-cf0d-dad7-a3f5-7d7b846cd0ac.htm" />
+    <HelpKINode Title="about ExamService class" Url="html/98525ac0-cf0d-dad7-a3f5-7d7b846cd0ac.htm" />
+    <HelpKINode Title="constructor" Url="html/423f285b-cabe-6422-f26a-1931e87646d5.htm" />
+    <HelpKINode Title="fields" Url="html/2e704df0-2cc2-2b40-f5da-49c56737d482.htm" />
+    <HelpKINode Title="methods" Url="html/a6625968-179a-cd47-ac50-dd55c28710a1.htm" />
+    <HelpKINode Title="properties" Url="html/ae0517c8-6b87-0934-52d8-42287f25038b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExamService.AnswerQuestion method" Url="html/b8be84e1-d7b7-7608-9037-018ff7ff07b9.htm" />
+  <HelpKINode Title="ExamService.CompleteExamAttempt method" Url="html/f1aca824-b038-c16d-cde7-26ebe91b89a3.htm" />
+  <HelpKINode Title="ExamService.CreateExamAttempt method" Url="html/442d4f4e-de9b-ed90-8fc4-0ae059915bf9.htm" />
+  <HelpKINode Title="ExamService.CreateUserExam method" Url="html/79633bd1-0ddf-3b75-51be-ac86ce716343.htm" />
+  <HelpKINode Title="ExamService.DeleteQuestionAnswer method" Url="html/89a17419-50d6-6856-4601-7332bf5a7512.htm" />
+  <HelpKINode Title="ExamService.DeleteUserExam method" Url="html/75c47519-1eda-0ad7-ae73-0974a9fabbf9.htm" />
+  <HelpKINode Title="ExamService.ExamService constructor" Url="html/423f285b-cabe-6422-f26a-1931e87646d5.htm" />
+  <HelpKINode Title="ExamService.GetAllExamItems method" Url="html/9f94626c-beff-e1ad-bb11-b30068939b1d.htm" />
+  <HelpKINode Title="ExamService.GetCurrentExamAttempt method" Url="html/554bd4f0-07b9-eeb2-7944-2b4fe293ef03.htm" />
+  <HelpKINode Title="ExamService.GetExamAttempt method" Url="html/6d2cf86b-5c25-c28c-0560-ab31bce6c64c.htm" />
+  <HelpKINode Title="ExamService.GetExamAttempts method" Url="html/972cbc77-2c73-cb50-f692-c0e90aae77cc.htm" />
+  <HelpKINode Title="ExamService.GetExamAttemptSummary method" Url="html/26481c07-f414-38f6-8e83-d071a748eacf.htm" />
+  <HelpKINode Title="ExamService.GetExamDetails method" Url="html/c3977d6b-b1d4-26f0-c6f5-2b0db5defb15.htm" />
+  <HelpKINode Title="ExamService.GetExamSchedules method" Url="html/c504690e-4c96-286e-97d8-d01ea622b72d.htm" />
+  <HelpKINode Title="ExamService.GetExamSectionQuestion method" Url="html/1b62bf4b-22c6-3ab2-02e9-07f457601569.htm" />
+  <HelpKINode Title="ExamService.GetExamSectionQuestions method" Url="html/4ed57598-06b7-6e8a-854c-9bbded3edb64.htm" />
+  <HelpKINode Title="ExamService.GetExamSections method" Url="html/013bbe43-4dbb-faf9-bb7b-58ec740bd4ce.htm" />
+  <HelpKINode Title="ExamService.GetExistingExam method" Url="html/47809645-be71-6085-1270-d20c138ba33a.htm" />
+  <HelpKINode Title="ExamService.GetExistingExams method" Url="html/f7131216-7f0e-a568-effd-2660f993780b.htm" />
+  <HelpKINode Title="ExamService.GetQuestionAnswer method" Url="html/04649822-1966-1c1c-ea62-9c3ce1343fa4.htm" />
+  <HelpKINode Title="ExamService.ServiceIdentifier property" Url="html/53fca3af-a172-f9da-44d9-6456ed02c9e2.htm" />
+  <HelpKINode Title="ExamService.StartExamAttempt method" Url="html/50a6939e-cd6f-0f0b-7bb9-d9d8afe1298b.htm" />
+  <HelpKINode Title="ExpirationTime property" Url="html/a75972b3-36ee-834f-a795-98ea61849db9.htm" />
+  <HelpKINode Title="ExpiresInSeconds property" Url="html/80bc6ddc-5235-8eae-103a-e9e0f364e99b.htm" />
+  <HelpKINode Title="FillInTheBlankQuestionType property" Url="html/71387fbc-e04f-2038-2bfe-ab50b969af2e.htm" />
+  <HelpKINode Title="GenerateCmac method" Url="html/d78856a9-485b-6b1d-a0d7-a0f058f6395f.htm" />
+  <HelpKINode Title="GenerateOAuth1Request method" Url="html/c28b94c2-82e9-a9a1-6929-68b3a9d3e065.htm" />
+  <HelpKINode Title="GenerateOAuth2AssertionRequest method" Url="html/4ff2a518-e6a0-a899-3ec9-9bbe8db72670.htm" />
+  <HelpKINode Title="GenerateOAuth2PasswordRequest method" Url="html/7bb3a95e-bbd8-0614-a3af-bb53a259a9ea.htm" />
+  <HelpKINode Title="GET enumeration member" Url="html/47499281-1270-a738-8514-6eb7d43e0582.htm" />
+  <HelpKINode Title="GetAllExamItems method" Url="html/9f94626c-beff-e1ad-bb11-b30068939b1d.htm" />
+  <HelpKINode Title="GetConfigurationString method" Url="html/fa3a368d-fc59-b2f2-a7ae-e402cddebb5d.htm" />
+  <HelpKINode Title="GetCourseGradebookUserItem method" Url="html/086ea4f5-971b-1546-4ff7-4bdf3ceca61f.htm" />
+  <HelpKINode Title="GetCourseGradebookUserItems method" Url="html/b2886413-bce6-b82e-41e7-289dfaea03bf.htm" />
+  <HelpKINode Title="GetCurrentExamAttempt method" Url="html/554bd4f0-07b9-eeb2-7944-2b4fe293ef03.htm" />
+  <HelpKINode Title="GetCurrentGrade method" Url="html/4a210682-7869-6992-3314-d8d132979f74.htm" />
+  <HelpKINode Title="GetCurrentGrades method" Url="html/07c0852a-7cdd-5ee4-f054-9e3f5289fa74.htm" />
+  <HelpKINode Title="GetCustomGradebookCategories method" Url="html/562de1a3-f5c0-3072-35cc-f17ad4ef7b6c.htm" />
+  <HelpKINode Title="GetCustomGradebookCategory method" Url="html/3b707542-bdf4-a0f8-9230-10615a123e1d.htm" />
+  <HelpKINode Title="GetCustomGradebookItem method" Url="html/c5bc6acd-0b21-1c21-b816-89034e237676.htm" />
+  <HelpKINode Title="GetCustomGradebookItems method" Url="html/c65151c1-ddfe-2698-c223-1f8d4f745da2.htm" />
+  <HelpKINode Title="GetExamAttempt method" Url="html/6d2cf86b-5c25-c28c-0560-ab31bce6c64c.htm" />
+  <HelpKINode Title="GetExamAttempts method" Url="html/972cbc77-2c73-cb50-f692-c0e90aae77cc.htm" />
+  <HelpKINode Title="GetExamAttemptSummary method" Url="html/26481c07-f414-38f6-8e83-d071a748eacf.htm" />
+  <HelpKINode Title="GetExamDetails method" Url="html/c3977d6b-b1d4-26f0-c6f5-2b0db5defb15.htm" />
+  <HelpKINode Title="GetExamSchedules method" Url="html/c504690e-4c96-286e-97d8-d01ea622b72d.htm" />
+  <HelpKINode Title="GetExamSectionQuestion method" Url="html/1b62bf4b-22c6-3ab2-02e9-07f457601569.htm" />
+  <HelpKINode Title="GetExamSectionQuestions method" Url="html/4ed57598-06b7-6e8a-854c-9bbded3edb64.htm" />
+  <HelpKINode Title="GetExamSections method" Url="html/013bbe43-4dbb-faf9-bb7b-58ec740bd4ce.htm" />
+  <HelpKINode Title="GetExistingExam method" Url="html/47809645-be71-6085-1270-d20c138ba33a.htm" />
+  <HelpKINode Title="GetExistingExams method" Url="html/f7131216-7f0e-a568-effd-2660f993780b.htm" />
+  <HelpKINode Title="GetGrade method" Url="html/4fa73e13-eca5-2045-a9b1-b3fda324fb97.htm" />
+  <HelpKINode Title="GetGradebookCustomItem method" Url="html/3b7b555e-fa81-2066-94a3-430bdd437486.htm" />
+  <HelpKINode Title="GetGradebookItem method" Url="html/625dee34-911c-6627-8b88-0da90207a274.htm" />
+  <HelpKINode Title="GetGradebookItemGrade method" Url="html/d59e6ca9-4ee7-c350-d17f-b993c1a5839a.htm" />
+  <HelpKINode Title="GetGradebookItemGrades method" Url="html/3773a34e-a437-d609-3d95-aaed18fd6c66.htm" />
+  <HelpKINode Title="GetGradebookItems method" Url="html/ed005eff-41e1-43f2-b19b-e67e3c56bc6e.htm" />
+  <HelpKINode Title="GetGrades method" Url="html/408df3f2-acde-bf89-94f5-619be5f65698.htm" />
+  <HelpKINode Title="GetItem method" Url="html/67da5b51-cd3e-5652-23f2-c4353f20fd01.htm" />
+  <HelpKINode Title="GetItemContent method" Url="html/5844fae2-246c-1a02-3f40-d5a8ca934c64.htm" />
+  <HelpKINode Title="GetItemHierarchy method" Url="html/29e2763f-0d6f-c949-0bf8-67f431d0c491.htm" />
+  <HelpKINode Title="GetItemLinkDetails method" Url="html/368c421f-994b-33cc-74dc-7b8b95332437.htm" />
+  <HelpKINode Title="GetItems method" Url="html/1055fe6b-a0f2-f914-d482-b437c58b0ecf.htm" />
+  <HelpKINode Title="GetLastThreadedDiscussionResponse method" Url="html/38c6cdf5-89a8-d583-d002-25c3afe8d6e4.htm" />
+  <HelpKINode Title="GetMsOfficeDocument method" Url="html/92f8c050-0e8f-49ff-6244-812e0d20610d.htm" />
+  <HelpKINode Title="GetMsOfficeDocumentContent method" Url="html/868df344-a8bc-59f3-92bd-8172e39b9772.htm" />
+  <HelpKINode Title="GetMsOfficeDocumentOriginal method" Url="html/0c65e409-2c2a-0a01-42ad-8d54c04f8dc4.htm" />
+  <HelpKINode Title="GetMsOfficeDocuments method" Url="html/7330b292-fb7b-5b69-0723-2d244281e6aa.htm" />
+  <HelpKINode Title="GetNonce method" Url="html/abbc1de2-554c-1e1b-cc4e-1304f2c76231.htm" />
+  <HelpKINode Title="GetQuestionAnswer method" Url="html/04649822-1966-1c1c-ea62-9c3ce1343fa4.htm" />
+  <HelpKINode Title="GetSystemDateTimeMillis method" Url="html/85860578-8389-29ec-9478-e793c1ec2f44.htm" />
+  <HelpKINode Title="GetTextMultimedia method" Url="html/69071471-1591-3946-3dff-7bea01307de5.htm" />
+  <HelpKINode Title="GetTextMultimedias method" Url="html/e2a2de34-a230-4642-d77d-42203a029b1b.htm" />
+  <HelpKINode Title="GetTextMultimediasContent method" Url="html/ce87b094-86b5-64e0-204e-6867198395f2.htm" />
+  <HelpKINode Title="GetThreadedDiscussionResponse method" Url="html/6cce1496-73bf-1d07-e45c-88b8c5ef20ef.htm" />
+  <HelpKINode Title="GetThreadedDiscussionResponseAndAuthorComposite method" Url="html/d10fa139-74d7-dd10-c3c3-fda68fa8c585.htm" />
+  <HelpKINode Title="GetThreadedDiscussionResponseAuthor method" Url="html/a5c44e85-2ae4-6d1a-e92a-92bb81412a04.htm" />
+  <HelpKINode Title="GetThreadedDiscussionResponseBranch method" Url="html/488b4c30-f575-b4b3-6eb7-abfb1836ec6f.htm" />
+  <HelpKINode Title="GetThreadedDiscussionResponseCount method" Url="html/02c34e13-5b4b-2863-cb77-489319bbf668.htm" />
+  <HelpKINode Title="GetThreadedDiscussionResponseHierarchy method" Url="html/aacf4ac5-bc1e-9de8-e91e-4daad654cea0.htm" />
+  <HelpKINode Title="GetThreadedDiscussionResponseReadStatus method" Url="html/b5a1917d-cb7c-9650-bf58-f9203ead90b7.htm" />
+  <HelpKINode Title="GetThreadedDiscussionResponses method" Url="html/8755be26-55d9-56c6-a833-4ec3d4fc666e.htm" />
+  <HelpKINode Title="GetThreadedDiscussions method" Url="html/db51df64-7e8e-c462-ac67-e1c2de2729fa.htm" />
+  <HelpKINode Title="GetThreadedDiscussionTopic method" Url="html/81b2ef8d-5068-9ed3-5af0-d5433bb0b5fd.htm" />
+  <HelpKINode Title="GetThreadedDiscussionTopicHierarchy method" Url="html/ae233747-4564-6f16-3578-fd7437728973.htm" />
+  <HelpKINode Title="GetThreadedDiscussionTopicResponseAndAuthorComposite method" Url="html/fcafd78d-7fe5-022a-c257-02689efc702f.htm" />
+  <HelpKINode Title="GetThreadedDiscussionTopicResponseCount method" Url="html/072c032c-8a4a-fe20-8283-054dd12823b9.htm" />
+  <HelpKINode Title="GetThreadedDiscussionTopics method" Url="html/257d891a-8e6a-3c7f-d531-9e3bdf867e67.htm" />
+  <HelpKINode Title="GetThreadedDiscussionTopicUserViewResponses method" Url="html/899a2682-b322-3c98-8c81-25159bc3d79f.htm" />
+  <HelpKINode Title="GetThreadedDiscussionUserViewResponses method" Url="html/eccc7650-b99a-1123-3033-464be3cbf539.htm" />
+  <HelpKINode Title="GetTimestamp method" Url="html/57de2677-53df-6cc4-7f80-35822c898a95.htm" />
+  <HelpKINode Title="GetTotalPointsAvailable method" Url="html/61781198-6a14-daf0-ecce-a39c40a8a82b.htm" />
+  <HelpKINode Title="GetUserGradebookItems method" Url="html/826e890f-2173-34f3-465a-fa6f55e300e7.htm" />
+  <HelpKINode Title="GetUserItemHierarchy method" Url="html/7e01b186-ed50-5d8e-8b24-559aa0c0e819.htm" />
+  <HelpKINode Title="GetUserItems method" Url="html/a8f8b509-9407-6870-31e3-6b8e02a20899.htm" />
+  <HelpKINode Title="GetWebContentUpload method" Url="html/59d0ce5c-6edd-f919-6a6d-4794281a25ea.htm" />
+  <HelpKINode Title="GetWebContentUploadContent method" Url="html/5a6ffb39-6e3b-edb4-7abe-fe8e1bd2261c.htm" />
+  <HelpKINode Title="GetWebContentUploadOriginal method" Url="html/61fa5eb4-a8ff-3766-2df8-071f4b9fb3be.htm" />
+  <HelpKINode Title="GetWebContentUploads method" Url="html/400a187a-09ed-c434-ec63-2a48a19d28bc.htm" />
+  <HelpKINode Title="GradebookItemId property" Url="html/577e4806-683d-2804-0613-0f906ed87091.htm" />
+  <HelpKINode Title="GradeCustomerCategoriesId property" Url="html/94c1b1ea-4ea2-09dd-8f10-7c01baab8184.htm" />
+  <HelpKINode Title="GradeCustomerCategoriesMultiple property" Url="html/3da9905d-9193-89f7-7a9e-5110ce1fb303.htm" />
+  <HelpKINode Title="GradeCustomerCategoriesSingle property" Url="html/5097240c-9d2b-d078-89ce-0428f1216f30.htm" />
+  <HelpKINode Title="GradeCustomerCategoriesURL property" Url="html/6953be39-8669-9c1f-d656-7e0e8d570de1.htm" />
+  <HelpKINode Title="GradeService class">
+    <HelpKINode Title="GradeService Class" Url="html/29752b75-3fee-c7ba-3d37-ae3a7eb96111.htm" />
+    <HelpKINode Title="about GradeService class" Url="html/29752b75-3fee-c7ba-3d37-ae3a7eb96111.htm" />
+    <HelpKINode Title="constructor" Url="html/9db38203-7378-8952-6d62-053cdc922631.htm" />
+    <HelpKINode Title="fields" Url="html/dfa9529c-f1c1-77c0-ffea-9da837445ea3.htm" />
+    <HelpKINode Title="methods" Url="html/cdbb8daf-4cfe-3547-87a7-46556118c9a8.htm" />
+    <HelpKINode Title="properties" Url="html/149dd715-96fc-bbd5-e707-27aaaa40b6f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GradeService.CreateCustomGradebookCategory method" Url="html/fdfa4012-7ae3-77bc-2965-777d211a106c.htm" />
+  <HelpKINode Title="GradeService.CreateCustomGradebookCategoryAndItem method" Url="html/08578fe9-220a-f67a-a2f9-3c893f57f968.htm" />
+  <HelpKINode Title="GradeService.CreateCustomGradebookItem method" Url="html/f82c6693-c2df-8e7d-03a5-707973edf8c4.htm" />
+  <HelpKINode Title="GradeService.CreateGrade method" Url="html/b97e5c9b-3d28-2424-5662-d4facc6752f8.htm" />
+  <HelpKINode Title="GradeService.CreateGradebookItemGrade method" Url="html/22fa1449-d667-22a5-8c74-94e1ace24add.htm" />
+  <HelpKINode Title="GradeService.DeleteCustomGradebookCategory method" Url="html/9559cd4f-6df6-3a91-84a7-5f071b8da203.htm" />
+  <HelpKINode Title="GradeService.DeleteCustomGradebookItem method" Url="html/24125660-efad-1303-b463-eefbd740439b.htm" />
+  <HelpKINode Title="GradeService.DeleteGrade method" Url="html/f9ea1e4a-1d02-f644-61d2-f97ca2e7c7c6.htm" />
+  <HelpKINode Title="GradeService.DeleteGradebookItemGrade method" Url="html/97f21eb4-a81f-6571-8905-39dd6f19a293.htm" />
+  <HelpKINode Title="GradeService.GetCourseGradebookUserItem method" Url="html/086ea4f5-971b-1546-4ff7-4bdf3ceca61f.htm" />
+  <HelpKINode Title="GradeService.GetCourseGradebookUserItems method" Url="html/b2886413-bce6-b82e-41e7-289dfaea03bf.htm" />
+  <HelpKINode Title="GradeService.GetCurrentGrade method" Url="html/4a210682-7869-6992-3314-d8d132979f74.htm" />
+  <HelpKINode Title="GradeService.GetCurrentGrades method" Url="html/07c0852a-7cdd-5ee4-f054-9e3f5289fa74.htm" />
+  <HelpKINode Title="GradeService.GetCustomGradebookCategories method" Url="html/562de1a3-f5c0-3072-35cc-f17ad4ef7b6c.htm" />
+  <HelpKINode Title="GradeService.GetCustomGradebookCategory method" Url="html/3b707542-bdf4-a0f8-9230-10615a123e1d.htm" />
+  <HelpKINode Title="GradeService.GetCustomGradebookItem method" Url="html/c5bc6acd-0b21-1c21-b816-89034e237676.htm" />
+  <HelpKINode Title="GradeService.GetCustomGradebookItems method" Url="html/c65151c1-ddfe-2698-c223-1f8d4f745da2.htm" />
+  <HelpKINode Title="GradeService.GetGrade method" Url="html/4fa73e13-eca5-2045-a9b1-b3fda324fb97.htm" />
+  <HelpKINode Title="GradeService.GetGradebookCustomItem method" Url="html/3b7b555e-fa81-2066-94a3-430bdd437486.htm" />
+  <HelpKINode Title="GradeService.GetGradebookItem method" Url="html/625dee34-911c-6627-8b88-0da90207a274.htm" />
+  <HelpKINode Title="GradeService.GetGradebookItemGrade method" Url="html/d59e6ca9-4ee7-c350-d17f-b993c1a5839a.htm" />
+  <HelpKINode Title="GradeService.GetGradebookItemGrades method" Url="html/3773a34e-a437-d609-3d95-aaed18fd6c66.htm" />
+  <HelpKINode Title="GradeService.GetGradebookItems method" Url="html/ed005eff-41e1-43f2-b19b-e67e3c56bc6e.htm" />
+  <HelpKINode Title="GradeService.GetGrades method" Url="html/408df3f2-acde-bf89-94f5-619be5f65698.htm" />
+  <HelpKINode Title="GradeService.GetTotalPointsAvailable method" Url="html/61781198-6a14-daf0-ecce-a39c40a8a82b.htm" />
+  <HelpKINode Title="GradeService.GetUserGradebookItems method" Url="html/826e890f-2173-34f3-465a-fa6f55e300e7.htm" />
+  <HelpKINode Title="GradeService.GradeService constructor" Url="html/9db38203-7378-8952-6d62-053cdc922631.htm" />
+  <HelpKINode Title="GradeService.ServiceIdentifier property" Url="html/3f7f28b1-23cd-7b76-1145-c9d2ad3ca347.htm" />
+  <HelpKINode Title="GradeService.UpdateCustomGradebookCategory method" Url="html/6cff6cd4-5b25-b3cd-95f6-25de7bd2ad67.htm" />
+  <HelpKINode Title="GradeService.UpdateGrade method" Url="html/8c7115b2-ef9d-d996-fc9c-29440334b428.htm" />
+  <HelpKINode Title="GradeService.UpdateGradebookItem method" Url="html/0527f51a-7e03-883b-5670-fe581a3d22eb.htm" />
+  <HelpKINode Title="GradeService.UpdateGradebookItemGrade method" Url="html/799c3cc4-1934-61b3-0cbb-8a619ebf2503.htm" />
+  <HelpKINode Title="Headers property">
+    <HelpKINode Title="OAuth1Request.Headers Property " Url="html/74f354c0-108f-d005-0d99-41ee328f8692.htm" />
+    <HelpKINode Title="OAuth2Request.Headers Property " Url="html/07189b7f-ef2b-9bd2-72c4-19dbb4f21984.htm" />
+    <HelpKINode Title="OAuthRequest.Headers Property " Url="html/a9fd2c27-c204-b36d-ff03-c543b679db78.htm" />
+    <HelpKINode Title="Response.Headers Property " Url="html/46a8eb4d-f509-5530-a5e7-cbff10280cb7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HEX enumeration member" Url="html/1eeca95f-83e9-ba59-9c92-34296b0fbed0.htm" />
+  <HelpKINode Title="HttpMethod enumeration" Url="html/47499281-1270-a738-8514-6eb7d43e0582.htm" />
+  <HelpKINode Title="ItemId property" Url="html/574c1dae-7c28-1b83-6f48-cb7e65727875.htm" />
+  <HelpKINode Title="JSON enumeration member" Url="html/b8ca220a-01a9-86dc-1f54-806e6732d5ca.htm" />
+  <HelpKINode Title="ManyMultipleChoiceQuestionType property" Url="html/534e6e24-0573-8413-964f-d9303e204d76.htm" />
+  <HelpKINode Title="MatchingQuestionType property" Url="html/49d8a357-0501-81aa-9b06-ce8cb5cf078f.htm" />
+  <HelpKINode Title="Method property" Url="html/c9a8eb1e-1edf-249c-96fa-81e688c8117b.htm" />
+  <HelpKINode Title="MsofficedocumentContentPath property" Url="html/546e8624-bf6d-e2bf-0475-dc9b5dd81ee0.htm" />
+  <HelpKINode Title="MsofficedocumentId property" Url="html/042ecc77-86c5-88a8-7fe7-f4305327bfa2.htm" />
+  <HelpKINode Title="MultimediaContentPath property" Url="html/444448ac-b553-6e98-248f-f888d6012a98.htm" />
+  <HelpKINode Title="MultimediaId property" Url="html/e2f10745-a316-771a-77d6-e20f010009f3.htm" />
+  <HelpKINode Title="MultiplechoiceQuestionType property" Url="html/68fa05fc-438f-a80d-4d32-d5bb0db01629.htm" />
+  <HelpKINode Title="NO_CONTENT field" Url="html/2bb2a271-e39f-6fc8-45ea-c4fa718c6ee9.htm" />
+  <HelpKINode Title="OAuth1Request class">
+    <HelpKINode Title="OAuth1Request Class" Url="html/c4e47b6c-5879-48b5-a138-64f8635b03c6.htm" />
+    <HelpKINode Title="about OAuth1Request class" Url="html/c4e47b6c-5879-48b5-a138-64f8635b03c6.htm" />
+    <HelpKINode Title="constructor" Url="html/2077437f-8cd1-3ecc-4928-6da97ef8c406.htm" />
+    <HelpKINode Title="properties" Url="html/bfda5239-2b4d-e87e-e1ab-423d1f568d1b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OAuth1Request.Headers property" Url="html/74f354c0-108f-d005-0d99-41ee328f8692.htm" />
+  <HelpKINode Title="OAuth1Request.OAuth1Request constructor" Url="html/2077437f-8cd1-3ecc-4928-6da97ef8c406.htm" />
+  <HelpKINode Title="OAuth1Request.Signature property" Url="html/1733aee9-7f11-5faf-9ecf-2acac6982369.htm" />
+  <HelpKINode Title="OAuth1SignatureConfig class">
+    <HelpKINode Title="OAuth1SignatureConfig Class" Url="html/fde65613-c2fb-5c90-3a2a-f61581edd8ed.htm" />
+    <HelpKINode Title="about OAuth1SignatureConfig class" Url="html/fde65613-c2fb-5c90-3a2a-f61581edd8ed.htm" />
+    <HelpKINode Title="constructor" Url="html/8d74bea3-461c-02d1-88de-38b22e287a11.htm" />
+    <HelpKINode Title="properties" Url="html/3d09624f-612f-2ec5-626c-f0a9122cd5c8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OAuth1SignatureConfig.ApplicationId property" Url="html/5be29cb5-b17a-d15d-b20a-9853774ff311.htm" />
+  <HelpKINode Title="OAuth1SignatureConfig.ConsumerKey property" Url="html/0747bfa5-f9db-0732-2119-514c05520a2a.htm" />
+  <HelpKINode Title="OAuth1SignatureConfig.ConsumerSecret property" Url="html/0a2181ad-d728-43a4-2e04-ec8d2962965e.htm" />
+  <HelpKINode Title="OAuth1SignatureConfig.OAuth1SignatureConfig constructor" Url="html/8d74bea3-461c-02d1-88de-38b22e287a11.htm" />
+  <HelpKINode Title="OAuth1SignatureService class">
+    <HelpKINode Title="OAuth1SignatureService Class" Url="html/3d2d1dd6-7827-dbb0-fced-365e40eed2d1.htm" />
+    <HelpKINode Title="about OAuth1SignatureService class" Url="html/3d2d1dd6-7827-dbb0-fced-365e40eed2d1.htm" />
+    <HelpKINode Title="constructor" Url="html/62527f3c-93a9-1baa-ea48-e4c1b5829ed5.htm" />
+    <HelpKINode Title="methods" Url="html/b1af2508-147e-4ced-906a-f090e23ec8f2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="oauth1SignatureService field" Url="html/6b4b7496-6f33-2f3e-03e4-e7357f527968.htm" />
+  <HelpKINode Title="OAuth1SignatureService.GenerateOAuth1Request method" Url="html/c28b94c2-82e9-a9a1-6929-68b3a9d3e065.htm" />
+  <HelpKINode Title="OAuth1SignatureService.OAuth1SignatureService constructor" Url="html/62527f3c-93a9-1baa-ea48-e4c1b5829ed5.htm" />
+  <HelpKINode Title="OAUTH1_SIGNATURE enumeration member" Url="html/e1a708c1-57e2-b49b-5789-d9520d53df8e.htm" />
+  <HelpKINode Title="OAuth2AssertionConfig class">
+    <HelpKINode Title="OAuth2AssertionConfig Class" Url="html/f3adeae2-9631-2ba6-b94b-f25d4eaba30f.htm" />
+    <HelpKINode Title="about OAuth2AssertionConfig class" Url="html/f3adeae2-9631-2ba6-b94b-f25d4eaba30f.htm" />
+    <HelpKINode Title="constructor" Url="html/7f4ba20f-dd64-cab1-a447-f2a138657fd9.htm" />
+    <HelpKINode Title="properties" Url="html/596be478-8872-482c-cf70-35ff9455f3aa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OAuth2AssertionConfig.ApplicationId property" Url="html/fb4b9d8a-80b2-4c41-77eb-8c135a3aab4e.htm" />
+  <HelpKINode Title="OAuth2AssertionConfig.ApplicationName property" Url="html/a63814d3-1462-6392-31c7-859911a4bb8a.htm" />
+  <HelpKINode Title="OAuth2AssertionConfig.ClientString property" Url="html/15286f0a-ab39-1560-deba-f0d80e686d69.htm" />
+  <HelpKINode Title="OAuth2AssertionConfig.ConsumerKey property" Url="html/f7bbc091-c890-3e75-0733-72ac2a58de8c.htm" />
+  <HelpKINode Title="OAuth2AssertionConfig.ConsumerSecret property" Url="html/1d1019e8-eed3-dd9f-8a86-b6eba417ddd7.htm" />
+  <HelpKINode Title="OAuth2AssertionConfig.OAuth2AssertionConfig constructor" Url="html/7f4ba20f-dd64-cab1-a447-f2a138657fd9.htm" />
+  <HelpKINode Title="OAuth2AssertionService class">
+    <HelpKINode Title="OAuth2AssertionService Class" Url="html/c3ae4afa-dd0a-cf84-04a9-b0392103055e.htm" />
+    <HelpKINode Title="about OAuth2AssertionService class" Url="html/c3ae4afa-dd0a-cf84-04a9-b0392103055e.htm" />
+    <HelpKINode Title="constructor" Url="html/a1ca37c6-ce25-9cca-d6c3-1ad9bec20f74.htm" />
+    <HelpKINode Title="methods" Url="html/5679c37d-9322-73ef-163e-e49e55d9cd36.htm" />
+  </HelpKINode>
+  <HelpKINode Title="oauth2AssertionService field" Url="html/9b2d662c-cdd3-2fbe-037f-42170b55be7e.htm" />
+  <HelpKINode Title="OAuth2AssertionService.GenerateOAuth2AssertionRequest method" Url="html/4ff2a518-e6a0-a899-3ec9-9bbe8db72670.htm" />
+  <HelpKINode Title="OAuth2AssertionService.OAuth2AssertionService constructor" Url="html/a1ca37c6-ce25-9cca-d6c3-1ad9bec20f74.htm" />
+  <HelpKINode Title="OAuth2PasswordConfig class">
+    <HelpKINode Title="OAuth2PasswordConfig Class" Url="html/9b395da2-5230-7a06-1072-1bfb1f39247e.htm" />
+    <HelpKINode Title="about OAuth2PasswordConfig class" Url="html/9b395da2-5230-7a06-1072-1bfb1f39247e.htm" />
+    <HelpKINode Title="constructor" Url="html/fa1a4954-1ec3-f48e-7b32-1489a61b436d.htm" />
+    <HelpKINode Title="properties" Url="html/ed537e5c-ffce-27c7-c58b-c19730b4cc9b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OAuth2PasswordConfig.ApplicationId property" Url="html/54acd0ce-f076-a06b-1d25-951a8746fcd8.htm" />
+  <HelpKINode Title="OAuth2PasswordConfig.ClientString property" Url="html/2ae18741-a761-afda-f7ef-dff7f9d0683b.htm" />
+  <HelpKINode Title="OAuth2PasswordConfig.OAuth2PasswordConfig constructor" Url="html/fa1a4954-1ec3-f48e-7b32-1489a61b436d.htm" />
+  <HelpKINode Title="OAuth2PasswordService class">
+    <HelpKINode Title="OAuth2PasswordService Class" Url="html/d370625a-aaac-3b2d-3a9f-70b7885a558e.htm" />
+    <HelpKINode Title="about OAuth2PasswordService class" Url="html/d370625a-aaac-3b2d-3a9f-70b7885a558e.htm" />
+    <HelpKINode Title="constructor" Url="html/ac643c11-f797-9fe8-0353-3b56935f328a.htm" />
+    <HelpKINode Title="methods" Url="html/ae21a3dc-d286-a28d-6215-6d8a2a07fcf2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="oauth2PasswordService field" Url="html/fedbb90e-022f-5552-6a88-834bcc75e9ed.htm" />
+  <HelpKINode Title="OAuth2PasswordService.GenerateOAuth2PasswordRequest method" Url="html/7bb3a95e-bbd8-0614-a3af-bb53a259a9ea.htm" />
+  <HelpKINode Title="OAuth2PasswordService.OAuth2PasswordService constructor" Url="html/ac643c11-f797-9fe8-0353-3b56935f328a.htm" />
+  <HelpKINode Title="OAuth2PasswordService.RefreshOAuth2PasswordRequest method" Url="html/fd1684f5-edff-4862-440c-3b1c1e13c86f.htm" />
+  <HelpKINode Title="OAuth2Request class">
+    <HelpKINode Title="OAuth2Request Class" Url="html/d0048280-1ca0-55c3-9893-fac75b71aaa7.htm" />
+    <HelpKINode Title="about OAuth2Request class" Url="html/d0048280-1ca0-55c3-9893-fac75b71aaa7.htm" />
+    <HelpKINode Title="constructor" Url="html/bca40695-c8e4-870d-ca00-b9a73fab2d6d.htm" />
+    <HelpKINode Title="properties" Url="html/2657fb33-cbfa-1652-d089-b27fad9220a3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OAuth2Request.AccessToken property" Url="html/b57ba436-1aa7-fbed-c7f7-4041509d5a9e.htm" />
+  <HelpKINode Title="OAuth2Request.CreationTime property" Url="html/d62e61f5-f619-6051-1bca-731e6e5d241e.htm" />
+  <HelpKINode Title="OAuth2Request.ExpirationTime property" Url="html/a75972b3-36ee-834f-a795-98ea61849db9.htm" />
+  <HelpKINode Title="OAuth2Request.ExpiresInSeconds property" Url="html/80bc6ddc-5235-8eae-103a-e9e0f364e99b.htm" />
+  <HelpKINode Title="OAuth2Request.Headers property" Url="html/07189b7f-ef2b-9bd2-72c4-19dbb4f21984.htm" />
+  <HelpKINode Title="OAuth2Request.OAuth2Request constructor" Url="html/bca40695-c8e4-870d-ca00-b9a73fab2d6d.htm" />
+  <HelpKINode Title="OAuth2Request.RefreshToken property" Url="html/4089acb2-4fc0-d3b9-6c64-b9529d8d17d6.htm" />
+  <HelpKINode Title="OAUTH2_ASSERTION enumeration member" Url="html/e1a708c1-57e2-b49b-5789-d9520d53df8e.htm" />
+  <HelpKINode Title="OAUTH2_PASSWORD enumeration member" Url="html/e1a708c1-57e2-b49b-5789-d9520d53df8e.htm" />
+  <HelpKINode Title="OAuthConfig class">
+    <HelpKINode Title="OAuthConfig Class" Url="html/00fbd25f-45c6-2663-0129-7d767e2e5ece.htm" />
+    <HelpKINode Title="about OAuthConfig class" Url="html/00fbd25f-45c6-2663-0129-7d767e2e5ece.htm" />
+    <HelpKINode Title="constructor" Url="html/7820db35-31e8-9435-baf4-0d4e4056dbab.htm" />
+    <HelpKINode Title="properties" Url="html/fef1f856-c36b-3b73-0ce4-074fe26cdd69.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OAuthConfig.ApplicationId property" Url="html/31c5e0c0-52c7-6f40-c0ca-9a15416d2655.htm" />
+  <HelpKINode Title="OAuthConfig.ApplicationName property" Url="html/5aaacfb6-d68c-508d-b482-8b98b1dda0d7.htm" />
+  <HelpKINode Title="OAuthConfig.ClientString property" Url="html/6733c9e4-674d-2943-c180-0dd5c2da5816.htm" />
+  <HelpKINode Title="OAuthConfig.ConsumerKey property" Url="html/c726ed37-4c72-cf0c-b82a-4f8965d2e33a.htm" />
+  <HelpKINode Title="OAuthConfig.ConsumerSecret property" Url="html/54f812d5-cc13-29b5-4c9b-46f5a378a0a9.htm" />
+  <HelpKINode Title="OAuthConfig.OAuthConfig constructor" Url="html/7820db35-31e8-9435-baf4-0d4e4056dbab.htm" />
+  <HelpKINode Title="OAuthRequest interface">
+    <HelpKINode Title="OAuthRequest Interface" Url="html/40660cee-fa00-3ec9-3ef3-c17320af32db.htm" />
+    <HelpKINode Title="about OAuthRequest interface" Url="html/40660cee-fa00-3ec9-3ef3-c17320af32db.htm" />
+    <HelpKINode Title="properties" Url="html/4db53cd0-e64b-f83c-5b99-f8fbc5325e18.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OAuthRequest.Headers property" Url="html/a9fd2c27-c204-b36d-ff03-c543b679db78.htm" />
+  <HelpKINode Title="OAuthService interface">
+    <HelpKINode Title="OAuthService Interface" Url="html/7212fd81-7fc7-0603-a6f8-40a36d00ea67.htm" />
+    <HelpKINode Title="about OAuthService interface" Url="html/7212fd81-7fc7-0603-a6f8-40a36d00ea67.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OAuthServiceFactory class">
+    <HelpKINode Title="OAuthServiceFactory Class" Url="html/f9530a88-8000-586b-0503-41814b3f5fb9.htm" />
+    <HelpKINode Title="about OAuthServiceFactory class" Url="html/f9530a88-8000-586b-0503-41814b3f5fb9.htm" />
+    <HelpKINode Title="constructor" Url="html/4ed940ef-c39f-01df-3827-8790942fef70.htm" />
+    <HelpKINode Title="fields" Url="html/f4ba05f3-5494-d3d1-4599-088e5465b4ca.htm" />
+    <HelpKINode Title="methods" Url="html/9011275c-1ab6-8a9d-b5bd-c3c20353d691.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OAuthServiceFactory.Build(Of T) method" Url="html/fd0ff636-b96c-2f64-5365-95b3c25d4505.htm" />
+  <HelpKINode Title="OAuthServiceFactory.Build&lt;T&gt; method" Url="html/fd0ff636-b96c-2f64-5365-95b3c25d4505.htm" />
+  <HelpKINode Title="OAuthServiceFactory.configuration field" Url="html/be6c83ec-956d-0c5b-6bf1-9e2ac9bdf859.htm" />
+  <HelpKINode Title="OAuthServiceFactory.oauth1SignatureService field" Url="html/6b4b7496-6f33-2f3e-03e4-e7357f527968.htm" />
+  <HelpKINode Title="OAuthServiceFactory.oauth2AssertionService field" Url="html/9b2d662c-cdd3-2fbe-037f-42170b55be7e.htm" />
+  <HelpKINode Title="OAuthServiceFactory.oauth2PasswordService field" Url="html/fedbb90e-022f-5552-6a88-834bcc75e9ed.htm" />
+  <HelpKINode Title="OAuthServiceFactory.OAuthServiceFactory constructor" Url="html/4ed940ef-c39f-01df-3827-8790942fef70.htm" />
+  <HelpKINode Title="Password property" Url="html/b8ba72bf-2377-77ef-a53c-874fda54daeb.htm" />
+  <HelpKINode Title="PathCoursesGradebookCustomCategories property" Url="html/c6f67efb-0efb-d9cc-6551-9d97d40dcb45.htm" />
+  <HelpKINode Title="PathCoursesGradebookCustomCategories_ property" Url="html/f89a80b1-1010-181e-2fa7-f851582788e5.htm" />
+  <HelpKINode Title="PathCoursesMsOfficeDocumentsOriginalDocument property" Url="html/bc8402c1-10ad-23a8-7de5-7ea6be2eba90.htm" />
+  <HelpKINode Title="POST enumeration member" Url="html/47499281-1270-a738-8514-6eb7d43e0582.htm" />
+  <HelpKINode Title="PreferredFormat property" Url="html/1de81059-5951-f287-cc46-a1cbade955e9.htm" />
+  <HelpKINode Title="ProtectedExamId property" Url="html/8eb97858-2afd-d1c6-f206-71950c239ea3.htm" />
+  <HelpKINode Title="ProtectedExamPassword property" Url="html/22b1af35-4d3c-8131-dd0a-14dfc993dec2.htm" />
+  <HelpKINode Title="PUT enumeration member" Url="html/47499281-1270-a738-8514-6eb7d43e0582.htm" />
+  <HelpKINode Title="RefreshOAuth2PasswordRequest method" Url="html/fd1684f5-edff-4862-440c-3b1c1e13c86f.htm" />
+  <HelpKINode Title="RefreshToken property" Url="html/4089acb2-4fc0-d3b9-6c64-b9529d8d17d6.htm" />
+  <HelpKINode Title="Response class">
+    <HelpKINode Title="Response Class" Url="html/73b9874b-ed89-f76c-a9af-70dad816920e.htm" />
+    <HelpKINode Title="about Response class" Url="html/73b9874b-ed89-f76c-a9af-70dad816920e.htm" />
+    <HelpKINode Title="constructor" Url="html/8692729a-b9d4-2ec8-33d2-b6be0eb15b86.htm" />
+    <HelpKINode Title="methods" Url="html/0c2a0c89-77fb-7d73-beb2-923a196384f8.htm" />
+    <HelpKINode Title="properties" Url="html/4bcca14c-181d-780c-c386-476e953a81c9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Response.BinaryContent property" Url="html/3cde58bc-1c2e-eab2-b676-0beee7ed3b9a.htm" />
+  <HelpKINode Title="Response.Content property" Url="html/4b8bb965-e940-7637-06fb-30e720bec2b4.htm" />
+  <HelpKINode Title="Response.ContentType property" Url="html/cbec871b-7e0c-d23f-4082-4a06993b612d.htm" />
+  <HelpKINode Title="Response.Error property" Url="html/3c191733-197b-7980-16e9-9bbfe658be78.htm" />
+  <HelpKINode Title="Response.Headers property" Url="html/46a8eb4d-f509-5530-a5e7-cbff10280cb7.htm" />
+  <HelpKINode Title="Response.Method property" Url="html/c9a8eb1e-1edf-249c-96fa-81e688c8117b.htm" />
+  <HelpKINode Title="Response.Response constructor" Url="html/8692729a-b9d4-2ec8-33d2-b6be0eb15b86.htm" />
+  <HelpKINode Title="Response.StatusCode property" Url="html/42442f64-3760-dd9a-d830-2fb5faccffac.htm" />
+  <HelpKINode Title="Response.StatusMessage property" Url="html/4e10a76c-213d-2fa2-3c1d-116e158c5c0d.htm" />
+  <HelpKINode Title="Response.ToString method" Url="html/4b7d11c3-f767-2f5e-f937-c8ce4d34f878.htm" />
+  <HelpKINode Title="Response.Url property" Url="html/d1fcd242-d281-039e-5bac-a393743bdce1.htm" />
+  <HelpKINode Title="ResponseId property" Url="html/d74f10e3-9244-1654-bd2e-e5951751d71a.htm" />
+  <HelpKINode Title="SectionId property" Url="html/ebbd49ca-bed0-9402-6494-9f32d8990d36.htm" />
+  <HelpKINode Title="ServiceIdentifier property">
+    <HelpKINode Title="AbstractService.ServiceIdentifier Property " Url="html/a9221ae1-60b1-2d5f-d0d2-2c85d432a4cf.htm" />
+    <HelpKINode Title="BasicService.ServiceIdentifier Property " Url="html/46244878-a50e-b9a0-9010-fb59b9397ecc.htm" />
+    <HelpKINode Title="ContentService.ServiceIdentifier Property " Url="html/d41f4443-ac81-ea59-49c5-8a892b7e1a44.htm" />
+    <HelpKINode Title="ExamService.ServiceIdentifier Property " Url="html/53fca3af-a172-f9da-44d9-6456ed02c9e2.htm" />
+    <HelpKINode Title="GradeService.ServiceIdentifier Property " Url="html/3f7f28b1-23cd-7b76-1145-c9d2ad3ca347.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShortAnswerQuestionType property" Url="html/e1a71336-2ef0-4073-9ac2-060addd1a13e.htm" />
+  <HelpKINode Title="Signature property" Url="html/1733aee9-7f11-5faf-9ecf-2acac6982369.htm" />
+  <HelpKINode Title="StartExamAttempt method" Url="html/50a6939e-cd6f-0f0b-7bb9-d9d8afe1298b.htm" />
+  <HelpKINode Title="StatusCode property" Url="html/42442f64-3760-dd9a-d830-2fb5faccffac.htm" />
+  <HelpKINode Title="StatusMessage property" Url="html/4e10a76c-213d-2fa2-3c1d-116e158c5c0d.htm" />
+  <HelpKINode Title="StudentUserId property" Url="html/15b22b68-3008-6ae4-c19d-adf4141b9677.htm" />
+  <HelpKINode Title="StudentUsername property" Url="html/265df8f2-99f0-c99b-d85e-18f1881521e3.htm" />
+  <HelpKINode Title="SystemDateTime property" Url="html/ac35b790-f021-7511-939f-644000d3025d.htm" />
+  <HelpKINode Title="TaUserId property" Url="html/b54ccd99-206c-f902-f4e0-1c2c52b72aa1.htm" />
+  <HelpKINode Title="TaUsername property" Url="html/d1b4d5e3-2326-b71c-7d7f-73838a97f267.htm" />
+  <HelpKINode Title="TeacherPassword property" Url="html/c3766805-7929-7071-9ffb-e3a63fae2609.htm" />
+  <HelpKINode Title="TeacherUserId property" Url="html/ab30b708-b992-de8c-523f-47497a0b0ce6.htm" />
+  <HelpKINode Title="TeacherUsername property" Url="html/db342202-0be5-7ce3-5a7d-93f6d47ba73b.htm" />
+  <HelpKINode Title="ThreadId property" Url="html/2329c48a-53cb-373a-b497-f3a85cb5228d.htm" />
+  <HelpKINode Title="TopicId property" Url="html/8a7a887c-cb46-47b5-a645-9f5be3ecca67.htm" />
+  <HelpKINode Title="ToString method" Url="html/4b7d11c3-f767-2f5e-f937-c8ce4d34f878.htm" />
+  <HelpKINode Title="TrueFalseQuestionType property" Url="html/1de672e0-3f93-4f7a-cfa6-fafe86b1239b.htm" />
+  <HelpKINode Title="UnitId property" Url="html/9ce31563-c275-4177-d7eb-cf8df9ce0835.htm" />
+  <HelpKINode Title="UpdateCustomGradebookCategory method" Url="html/6cff6cd4-5b25-b3cd-95f6-25de7bd2ad67.htm" />
+  <HelpKINode Title="UpdateGrade method" Url="html/8c7115b2-ef9d-d996-fc9c-29440334b428.htm" />
+  <HelpKINode Title="UpdateGradebookItem method" Url="html/0527f51a-7e03-883b-5670-fe581a3d22eb.htm" />
+  <HelpKINode Title="UpdateGradebookItemGrade method" Url="html/799c3cc4-1934-61b3-0cbb-8a619ebf2503.htm" />
+  <HelpKINode Title="UpdateThreadedDiscussionResponseReadStatus method" Url="html/4fe8d312-64e2-8bfa-c70e-4060957b0843.htm" />
+  <HelpKINode Title="Url property" Url="html/d1fcd242-d281-039e-5bac-a393743bdce1.htm" />
+  <HelpKINode Title="UseOAuth1 method" Url="html/20af5db6-c8ef-4bcf-b456-8977b6156b03.htm" />
+  <HelpKINode Title="UseOAuth2 method" Url="html/73ec14dd-cddc-3896-47d0-000f2d3b18d3.htm" />
+  <HelpKINode Title="Username property" Url="html/5de3f2c8-625f-bdfa-6d60-9f07fc4747ea.htm" />
+  <HelpKINode Title="WebcontentuploadContentPath property" Url="html/7edc4102-0eb5-a64b-9bd8-675aef25b874.htm" />
+  <HelpKINode Title="WebcontentuploadId property" Url="html/e6970a5f-3b64-ad6a-cc65-7aa3b88fb7a4.htm" />
+  <HelpKINode Title="XML enumeration member" Url="html/b8ca220a-01a9-86dc-1f54-806e6732d5ca.htm" />
+</HelpKI>

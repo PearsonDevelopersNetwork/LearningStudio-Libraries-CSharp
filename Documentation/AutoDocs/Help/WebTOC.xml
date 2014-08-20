@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="2d50f535-6f51-452d-b9ae-01d109dddca0" Title="Namespaces" Url="html/d75eb659-6335-53f6-af7a-81814a21ab7f.htm">
+    <HelpTOCNode Id="04023f17-edc4-4627-8685-06235769a6dc" Title="Com.Pearson.Pdn.Learningstudio.Content" Url="html/6614026b-013e-90fb-1170-adac44a0e45e.htm">
+      <HelpTOCNode Id="b73f6464-f81f-48fc-8d2a-2d0756a085bb" Title="ContentService Class" Url="html/145fa3e3-1ef9-14ce-f872-02857ff728b5.htm">
+        <HelpTOCNode Title="ContentService Constructor " Url="html/f89e93d9-27cd-c7cc-6f04-d1603303379e.htm" />
+        <HelpTOCNode Title="ContentService Fields" Url="html/fa6a31db-1a6e-6e2a-6b0c-6f0ab9790ac1.htm" />
+        <HelpTOCNode Id="afc15f6e-13bd-4437-bdc1-e8d3b4b5a844" Title="ContentService Methods" Url="html/a645a79a-82a1-1dee-528b-af8618c0d6c3.htm">
+          <HelpTOCNode Id="5da638b7-37f9-4ee9-87b0-19b4eb36abdc" Title="CreateThreadedDiscussionResponse Method " Url="html/2e240f30-f290-66f5-b808-862457d9e8a1.htm">
+            <HelpTOCNode Title="CreateThreadedDiscussionResponse Method (String, String, String, String)" Url="html/783d9620-edac-4d34-0417-be9b28e5f459.htm" />
+            <HelpTOCNode Title="CreateThreadedDiscussionResponse Method (String, String, String, String, String)" Url="html/1dae8381-f4a8-d925-79ea-da96df7d6e25.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="DeleteThreadedDiscussionResponse Method " Url="html/c819d615-ee22-8dbb-e5ba-ecbf998e9166.htm" />
+          <HelpTOCNode Title="GetItem Method " Url="html/67da5b51-cd3e-5652-23f2-c4353f20fd01.htm" />
+          <HelpTOCNode Title="GetItemContent Method " Url="html/5844fae2-246c-1a02-3f40-d5a8ca934c64.htm" />
+          <HelpTOCNode Id="ae0a2241-42c5-4a03-8a22-669098c367d2" Title="GetItemHierarchy Method " Url="html/29e2763f-0d6f-c949-0bf8-67f431d0c491.htm">
+            <HelpTOCNode Title="GetItemHierarchy Method (String)" Url="html/e0c85e23-9126-6fc1-382a-4305be4b7ae8.htm" />
+            <HelpTOCNode Title="GetItemHierarchy Method (String, String)" Url="html/84443339-b0b8-cf6b-8b6d-e033a78482bd.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetItemLinkDetails Method " Url="html/368c421f-994b-33cc-74dc-7b8b95332437.htm" />
+          <HelpTOCNode Title="GetItems Method " Url="html/1055fe6b-a0f2-f914-d482-b437c58b0ecf.htm" />
+          <HelpTOCNode Title="GetLastThreadedDiscussionResponse Method " Url="html/38c6cdf5-89a8-d583-d002-25c3afe8d6e4.htm" />
+          <HelpTOCNode Title="GetMsOfficeDocument Method " Url="html/92f8c050-0e8f-49ff-6244-812e0d20610d.htm" />
+          <HelpTOCNode Id="62b89745-a2d5-47a7-bec0-d62b5cf384c7" Title="GetMsOfficeDocumentContent Method " Url="html/868df344-a8bc-59f3-92bd-8172e39b9772.htm">
+            <HelpTOCNode Title="GetMsOfficeDocumentContent Method (String, String)" Url="html/6014c396-364f-6ec6-4800-f661754d1a31.htm" />
+            <HelpTOCNode Title="GetMsOfficeDocumentContent Method (String, String, String)" Url="html/5ecf69b3-5bea-2629-1993-8851a67848ea.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetMsOfficeDocumentOriginal Method " Url="html/0c65e409-2c2a-0a01-42ad-8d54c04f8dc4.htm" />
+          <HelpTOCNode Title="GetMsOfficeDocuments Method " Url="html/7330b292-fb7b-5b69-0723-2d244281e6aa.htm" />
+          <HelpTOCNode Title="GetTextMultimedia Method " Url="html/69071471-1591-3946-3dff-7bea01307de5.htm" />
+          <HelpTOCNode Title="GetTextMultimedias Method " Url="html/e2a2de34-a230-4642-d77d-42203a029b1b.htm" />
+          <HelpTOCNode Id="a7b360ba-3927-4e91-ab32-c8a31d3706ab" Title="GetTextMultimediasContent Method " Url="html/ce87b094-86b5-64e0-204e-6867198395f2.htm">
+            <HelpTOCNode Title="GetTextMultimediasContent Method (String, String)" Url="html/8373d825-071c-d6ab-a71b-f94bb78d545c.htm" />
+            <HelpTOCNode Title="GetTextMultimediasContent Method (String, String, Boolean)" Url="html/50298bba-200c-2a14-fac9-ab08feaf9f94.htm" />
+            <HelpTOCNode Title="GetTextMultimediasContent Method (String, String, String)" Url="html/b547c787-ad23-c250-3522-a7f2be41428b.htm" />
+            <HelpTOCNode Title="GetTextMultimediasContent Method (String, String, String, Boolean)" Url="html/04f04e9d-0267-52c6-1dce-ba63a9f56353.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetThreadedDiscussionResponse Method " Url="html/6cce1496-73bf-1d07-e45c-88b8c5ef20ef.htm" />
+          <HelpTOCNode Id="a6269e6f-7c76-4426-bc9f-b3cf20c8202f" Title="GetThreadedDiscussionResponseAndAuthorComposite Method " Url="html/d10fa139-74d7-dd10-c3c3-fda68fa8c585.htm">
+            <HelpTOCNode Title="GetThreadedDiscussionResponseAndAuthorComposite Method (String, String, String, String)" Url="html/ac5a6a86-b176-e079-3cae-de13bc47e1e4.htm" />
+            <HelpTOCNode Title="GetThreadedDiscussionResponseAndAuthorComposite Method (String, String, String, String, Int32)" Url="html/bbbcfce4-8108-91da-844f-b5fb45c7e570.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetThreadedDiscussionResponseAuthor Method " Url="html/a5c44e85-2ae4-6d1a-e92a-92bb81412a04.htm" />
+          <HelpTOCNode Title="GetThreadedDiscussionResponseBranch Method " Url="html/488b4c30-f575-b4b3-6eb7-abfb1836ec6f.htm" />
+          <HelpTOCNode Id="9f958b81-2db1-4155-b2e6-28422aba0a4b" Title="GetThreadedDiscussionResponseCount Method " Url="html/02c34e13-5b4b-2863-cb77-489319bbf668.htm">
+            <HelpTOCNode Title="GetThreadedDiscussionResponseCount Method (String, String, String, String, String)" Url="html/42dc6615-4d23-6622-ca1e-1ec5dead5f45.htm" />
+            <HelpTOCNode Title="GetThreadedDiscussionResponseCount Method (String, String, String, String, String, Int32)" Url="html/1642511c-e34b-c519-f2e2-e876b4e6e2da.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetThreadedDiscussionResponseHierarchy Method " Url="html/aacf4ac5-bc1e-9de8-e91e-4daad654cea0.htm" />
+          <HelpTOCNode Title="GetThreadedDiscussionResponseReadStatus Method " Url="html/b5a1917d-cb7c-9650-bf58-f9203ead90b7.htm" />
+          <HelpTOCNode Title="GetThreadedDiscussionResponses Method " Url="html/8755be26-55d9-56c6-a833-4ec3d4fc666e.htm" />
+          <HelpTOCNode Id="5d3cb356-a787-4743-8ace-34f99eb404cf" Title="GetThreadedDiscussions Method " Url="html/db51df64-7e8e-c462-ac67-e1c2de2729fa.htm">
+            <HelpTOCNode Title="GetThreadedDiscussions Method (String)" Url="html/61cfeca6-12bc-ada7-067a-b5bc720fcc09.htm" />
+            <HelpTOCNode Title="GetThreadedDiscussions Method (String, Boolean)" Url="html/e3064d79-a904-fbe8-6142-53d9843b2daf.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="f84a2590-72dd-4a49-8086-58be887ad98d" Title="GetThreadedDiscussionTopic Method " Url="html/81b2ef8d-5068-9ed3-5af0-d5433bb0b5fd.htm">
+            <HelpTOCNode Title="GetThreadedDiscussionTopic Method (String, String, String)" Url="html/c800465f-f4eb-fd7b-c3db-4391f1cd9e42.htm" />
+            <HelpTOCNode Title="GetThreadedDiscussionTopic Method (String, String, String, Boolean)" Url="html/47d16a93-a1b0-b357-238e-d0f44bef3519.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetThreadedDiscussionTopicHierarchy Method " Url="html/ae233747-4564-6f16-3578-fd7437728973.htm" />
+          <HelpTOCNode Id="74062d6d-0627-479e-88d3-9ab9a1622ea4" Title="GetThreadedDiscussionTopicResponseAndAuthorComposite Method " Url="html/fcafd78d-7fe5-022a-c257-02689efc702f.htm">
+            <HelpTOCNode Title="GetThreadedDiscussionTopicResponseAndAuthorComposite Method (String, String, String)" Url="html/4eabccaa-a9d7-8fd7-3e1c-3a8c4eaceeae.htm" />
+            <HelpTOCNode Title="GetThreadedDiscussionTopicResponseAndAuthorComposite Method (String, String, String, Int32)" Url="html/5ea95cae-4652-e789-2ae0-a78047a00f58.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="e22b56d7-cd0d-4f97-a718-4975277b8506" Title="GetThreadedDiscussionTopicResponseCount Method " Url="html/072c032c-8a4a-fe20-8283-054dd12823b9.htm">
+            <HelpTOCNode Title="GetThreadedDiscussionTopicResponseCount Method (String, String, String, String)" Url="html/9e2f9ab4-579c-6a6d-3510-d057a999930a.htm" />
+            <HelpTOCNode Title="GetThreadedDiscussionTopicResponseCount Method (String, String, String, String, Int32)" Url="html/3cfe1942-1599-5fee-d3ae-2e8a566db6b4.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="50e95c8e-a0b4-4b98-93b2-10a339a22d15" Title="GetThreadedDiscussionTopics Method " Url="html/257d891a-8e6a-3c7f-d531-9e3bdf867e67.htm">
+            <HelpTOCNode Title="GetThreadedDiscussionTopics Method (String, String)" Url="html/0d5b8cd7-4dd4-2370-b9da-94a0f65ba197.htm" />
+            <HelpTOCNode Title="GetThreadedDiscussionTopics Method (String, String, Boolean)" Url="html/3d7cb3e7-0ffa-f07c-166e-44b2635b8e9f.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="9e78315d-d797-4be9-88ac-d7f229f816c8" Title="GetThreadedDiscussionTopicUserViewResponses Method " Url="html/899a2682-b322-3c98-8c81-25159bc3d79f.htm">
+            <HelpTOCNode Title="GetThreadedDiscussionTopicUserViewResponses Method (String, String, String, String)" Url="html/f4539a54-5cef-b0b4-f337-3752bab6279d.htm" />
+            <HelpTOCNode Title="GetThreadedDiscussionTopicUserViewResponses Method (String, String, String, String, Int32)" Url="html/c9e4c3bb-9609-9ea9-a158-a192a7cb594e.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="e205ba84-1cc9-4892-94df-ceb6b0de3d82" Title="GetThreadedDiscussionUserViewResponses Method " Url="html/eccc7650-b99a-1123-3033-464be3cbf539.htm">
+            <HelpTOCNode Title="GetThreadedDiscussionUserViewResponses Method (String, String, String, String, String)" Url="html/84e26390-61d4-634e-149b-392b6aa32cfe.htm" />
+            <HelpTOCNode Title="GetThreadedDiscussionUserViewResponses Method (String, String, String, String, String, Int32)" Url="html/eb7c3483-ccc4-c7f5-c024-d012bec38718.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="18fa3179-4ea2-4388-a531-657e53521f1c" Title="GetUserItemHierarchy Method " Url="html/7e01b186-ed50-5d8e-8b24-559aa0c0e819.htm">
+            <HelpTOCNode Title="GetUserItemHierarchy Method (String, String)" Url="html/13474dcd-8d27-7948-8976-fb135421a6a5.htm" />
+            <HelpTOCNode Title="GetUserItemHierarchy Method (String, String, String)" Url="html/619ea7e5-9962-da24-b4d0-8de6c20865e4.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetUserItems Method " Url="html/a8f8b509-9407-6870-31e3-6b8e02a20899.htm" />
+          <HelpTOCNode Title="GetWebContentUpload Method " Url="html/59d0ce5c-6edd-f919-6a6d-4794281a25ea.htm" />
+          <HelpTOCNode Id="d3fcc41f-7b77-405d-b524-485db2da2b44" Title="GetWebContentUploadContent Method " Url="html/5a6ffb39-6e3b-edb4-7abe-fe8e1bd2261c.htm">
+            <HelpTOCNode Title="GetWebContentUploadContent Method (String, String)" Url="html/07635ddf-2e49-f9e9-7b9b-4c5100d94f1e.htm" />
+            <HelpTOCNode Title="GetWebContentUploadContent Method (String, String, String)" Url="html/1c16705e-fd52-f6b2-3ff6-7b68b2246fab.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetWebContentUploadOriginal Method " Url="html/61fa5eb4-a8ff-3766-2df8-071f4b9fb3be.htm" />
+          <HelpTOCNode Title="GetWebContentUploads Method " Url="html/400a187a-09ed-c434-ec63-2a48a19d28bc.htm" />
+          <HelpTOCNode Title="UpdateThreadedDiscussionResponseReadStatus Method " Url="html/4fe8d312-64e2-8bfa-c70e-4060957b0843.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a14155e8-85ae-46cb-9e38-dc1ad028f82e" Title="ContentService Properties" Url="html/eb12f4c9-054e-5d16-2aa0-314c0b629384.htm">
+          <HelpTOCNode Title="ServiceIdentifier Property " Url="html/d41f4443-ac81-ea59-49c5-8a892b7e1a44.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f1b3f8de-bd0d-42d5-a857-b77021b964e2" Title="Com.Pearson.Pdn.Learningstudio.Core" Url="html/b4229741-2bc0-09b4-a369-8aa0be1f25a4.htm">
+      <HelpTOCNode Id="3a07fa08-8b62-4234-af9e-d6c03cea5af1" Title="AbstractService Class" Url="html/d6785838-162a-a33e-d8b9-3b17787b3e7d.htm">
+        <HelpTOCNode Title="AbstractService Constructor " Url="html/fc0ab918-6c0b-af95-b5dc-bad26d96baad.htm" />
+        <HelpTOCNode Id="c5fc1958-f363-4712-9c7b-0e458edc23fd" Title="AbstractService Fields" Url="html/be1d1fab-bdcc-49e2-0143-4964067d4327.htm">
+          <HelpTOCNode Title="dataFormat Field" Url="html/69d46b8b-0de0-7898-ec1e-7a9655eee997.htm" />
+          <HelpTOCNode Title="NO_CONTENT Field" Url="html/2bb2a271-e39f-6fc8-45ea-c4fa718c6ee9.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5236ea9d-7ffb-4edc-a0d4-b502ba60a606" Title="AbstractService Methods" Url="html/a845c24b-5712-d860-d736-56e786c63ab2.htm">
+          <HelpTOCNode Title="Destroy Method " Url="html/1f3b82bc-dd6a-6c62-2ca3-3a7f9a5374d8.htm" />
+          <HelpTOCNode Id="151ac8b5-65c8-4867-b08f-92e8bf97ef92" Title="DoMethod Method " Url="html/3f49f0c9-312d-082d-215d-ef852f169c66.htm">
+            <HelpTOCNode Title="DoMethod Method (HttpMethod, String, String)" Url="html/fb7509d4-785b-fa59-ea42-9ac47691e733.htm" />
+            <HelpTOCNode Title="DoMethod Method (IDictionary(String, String), HttpMethod, String, String)" Url="html/34610be4-46c0-76ae-40e6-876a9db4a1b3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetSystemDateTimeMillis Method " Url="html/85860578-8389-29ec-9478-e793c1ec2f44.htm" />
+          <HelpTOCNode Title="UseOAuth1 Method " Url="html/20af5db6-c8ef-4bcf-b456-8977b6156b03.htm" />
+          <HelpTOCNode Id="c9d4981e-cc9d-435d-ac7a-0587f306d307" Title="UseOAuth2 Method " Url="html/73ec14dd-cddc-3896-47d0-000f2d3b18d3.htm">
+            <HelpTOCNode Title="UseOAuth2 Method (String)" Url="html/da03083a-4b84-0a67-4430-ba6d3182d925.htm" />
+            <HelpTOCNode Title="UseOAuth2 Method (String, String)" Url="html/f95034a5-43c4-eb9f-6984-6b44f77e623a.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Id="82495ef6-f40c-4bfd-a091-38816ff3e394" Title="AbstractService Properties" Url="html/46ca01bd-045d-9cee-38e0-d62187b26aff.htm">
+          <HelpTOCNode Title="PreferredFormat Property " Url="html/1de81059-5951-f287-cc46-a1cbade955e9.htm" />
+          <HelpTOCNode Title="ServiceIdentifier Property " Url="html/a9221ae1-60b1-2d5f-d0d2-2c85d432a4cf.htm" />
+          <HelpTOCNode Title="SystemDateTime Property " Url="html/ac35b790-f021-7511-939f-644000d3025d.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="AbstractService.AuthMethod Enumeration" Url="html/e1a708c1-57e2-b49b-5789-d9520d53df8e.htm" />
+      <HelpTOCNode Title="AbstractService.DataFormat Enumeration" Url="html/b8ca220a-01a9-86dc-1f54-806e6732d5ca.htm" />
+      <HelpTOCNode Id="17f20c95-d110-46a4-8152-6c10d2a6b13e" Title="BasicService Class" Url="html/157f6a70-5449-5d1c-8d5e-6b0a09299461.htm">
+        <HelpTOCNode Title="BasicService Constructor " Url="html/5f8f2bd5-a496-7eeb-c6b7-9a290bf27e77.htm" />
+        <HelpTOCNode Title="BasicService Fields" Url="html/3386ff41-9890-6b9d-7720-2126e586ac75.htm" />
+        <HelpTOCNode Id="5fdb49b9-50f7-49c2-85b5-151b48b20ff8" Title="BasicService Methods" Url="html/df1f1600-8d97-88cc-1a0e-3823d152162a.htm">
+          <HelpTOCNode Id="950b8c8d-dedb-455f-b172-7b401132d9f5" Title="DoMethod Method " Url="html/b1f4ff01-c376-fa80-e5fd-04aada1cd78e.htm">
+            <HelpTOCNode Title="DoMethod Method (HttpMethod, String, String)" Url="html/ea01b8d0-7231-1153-95f2-611d62d209f2.htm" />
+            <HelpTOCNode Title="DoMethod Method (IDictionary(String, String), HttpMethod, String, String)" Url="html/b3d5ea2d-4b2b-0f3d-6b79-721320ebe6d4.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Id="972c915d-b08e-4593-a2aa-38e0b6488410" Title="BasicService Properties" Url="html/f1d0f6b1-7e9d-891d-3b6f-2cf24d017429.htm">
+          <HelpTOCNode Title="ServiceIdentifier Property " Url="html/46244878-a50e-b9a0-9010-fb59b9397ecc.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="976935cb-5762-4759-ab8f-fb99874f6d66" Title="Response Class" Url="html/73b9874b-ed89-f76c-a9af-70dad816920e.htm">
+        <HelpTOCNode Title="Response Constructor " Url="html/8692729a-b9d4-2ec8-33d2-b6be0eb15b86.htm" />
+        <HelpTOCNode Id="75f203fa-d72d-46f6-8769-4c6cd3da581f" Title="Response Methods" Url="html/0c2a0c89-77fb-7d73-beb2-923a196384f8.htm">
+          <HelpTOCNode Title="ToString Method " Url="html/4b7d11c3-f767-2f5e-f937-c8ce4d34f878.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="d75619ca-0b77-456a-b790-83b9d9d44be9" Title="Response Properties" Url="html/4bcca14c-181d-780c-c386-476e953a81c9.htm">
+          <HelpTOCNode Title="BinaryContent Property " Url="html/3cde58bc-1c2e-eab2-b676-0beee7ed3b9a.htm" />
+          <HelpTOCNode Title="Content Property " Url="html/4b8bb965-e940-7637-06fb-30e720bec2b4.htm" />
+          <HelpTOCNode Title="ContentType Property " Url="html/cbec871b-7e0c-d23f-4082-4a06993b612d.htm" />
+          <HelpTOCNode Title="Error Property " Url="html/3c191733-197b-7980-16e9-9bbfe658be78.htm" />
+          <HelpTOCNode Title="Headers Property " Url="html/46a8eb4d-f509-5530-a5e7-cbff10280cb7.htm" />
+          <HelpTOCNode Title="Method Property " Url="html/c9a8eb1e-1edf-249c-96fa-81e688c8117b.htm" />
+          <HelpTOCNode Title="StatusCode Property " Url="html/42442f64-3760-dd9a-d830-2fb5faccffac.htm" />
+          <HelpTOCNode Title="StatusMessage Property " Url="html/4e10a76c-213d-2fa2-3c1d-116e158c5c0d.htm" />
+          <HelpTOCNode Title="Url Property " Url="html/d1fcd242-d281-039e-5bac-a393743bdce1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="afee6ba1-105e-4ff8-be01-b8a34508177c" Title="Com.Pearson.Pdn.Learningstudio.Exam" Url="html/791ec00e-f400-d6ff-7a52-4ede7472c018.htm">
+      <HelpTOCNode Id="11260c52-d1f8-42f9-aa51-57a0d7bccceb" Title="ExamService Class" Url="html/98525ac0-cf0d-dad7-a3f5-7d7b846cd0ac.htm">
+        <HelpTOCNode Title="ExamService Constructor " Url="html/423f285b-cabe-6422-f26a-1931e87646d5.htm" />
+        <HelpTOCNode Title="ExamService Fields" Url="html/2e704df0-2cc2-2b40-f5da-49c56737d482.htm" />
+        <HelpTOCNode Id="b6e19888-02f1-45a4-bae8-867449d0a134" Title="ExamService Methods" Url="html/a6625968-179a-cd47-ac50-dd55c28710a1.htm">
+          <HelpTOCNode Title="AnswerQuestion Method " Url="html/b8be84e1-d7b7-7608-9037-018ff7ff07b9.htm" />
+          <HelpTOCNode Title="CompleteExamAttempt Method " Url="html/f1aca824-b038-c16d-cde7-26ebe91b89a3.htm" />
+          <HelpTOCNode Id="f0e65ce2-c3c9-4ea9-98a2-45168e94a64b" Title="CreateExamAttempt Method " Url="html/442d4f4e-de9b-ed90-8fc4-0ae059915bf9.htm">
+            <HelpTOCNode Title="CreateExamAttempt Method (String, String, String)" Url="html/fd19d004-f91e-64f2-da56-1c7b81033e1b.htm" />
+            <HelpTOCNode Title="CreateExamAttempt Method (String, String, String, String)" Url="html/23457d8c-3293-f3d7-4cd4-a8267adf2b63.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="CreateUserExam Method " Url="html/79633bd1-0ddf-3b75-51be-ac86ce716343.htm" />
+          <HelpTOCNode Title="DeleteQuestionAnswer Method " Url="html/89a17419-50d6-6856-4601-7332bf5a7512.htm" />
+          <HelpTOCNode Title="DeleteUserExam Method " Url="html/75c47519-1eda-0ad7-ae73-0974a9fabbf9.htm" />
+          <HelpTOCNode Title="GetAllExamItems Method " Url="html/9f94626c-beff-e1ad-bb11-b30068939b1d.htm" />
+          <HelpTOCNode Title="GetCurrentExamAttempt Method " Url="html/554bd4f0-07b9-eeb2-7944-2b4fe293ef03.htm" />
+          <HelpTOCNode Title="GetExamAttempt Method " Url="html/6d2cf86b-5c25-c28c-0560-ab31bce6c64c.htm" />
+          <HelpTOCNode Title="GetExamAttempts Method " Url="html/972cbc77-2c73-cb50-f692-c0e90aae77cc.htm" />
+          <HelpTOCNode Title="GetExamAttemptSummary Method " Url="html/26481c07-f414-38f6-8e83-d071a748eacf.htm" />
+          <HelpTOCNode Id="d7e7f4db-9a2f-486e-83e9-34506b218f4a" Title="GetExamDetails Method " Url="html/c3977d6b-b1d4-26f0-c6f5-2b0db5defb15.htm">
+            <HelpTOCNode Title="GetExamDetails Method (String, String)" Url="html/f0f8f68d-7d4d-7187-d7c0-2e649b0b2187.htm" />
+            <HelpTOCNode Title="GetExamDetails Method (String, String, String)" Url="html/affca668-bab1-ef2d-7278-2cbca23c9c2d.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetExamSchedules Method " Url="html/c504690e-4c96-286e-97d8-d01ea622b72d.htm" />
+          <HelpTOCNode Title="GetExamSectionQuestion Method " Url="html/1b62bf4b-22c6-3ab2-02e9-07f457601569.htm" />
+          <HelpTOCNode Title="GetExamSectionQuestions Method " Url="html/4ed57598-06b7-6e8a-854c-9bbded3edb64.htm" />
+          <HelpTOCNode Title="GetExamSections Method " Url="html/013bbe43-4dbb-faf9-bb7b-58ec740bd4ce.htm" />
+          <HelpTOCNode Title="GetExistingExam Method " Url="html/47809645-be71-6085-1270-d20c138ba33a.htm" />
+          <HelpTOCNode Title="GetExistingExams Method " Url="html/f7131216-7f0e-a568-effd-2660f993780b.htm" />
+          <HelpTOCNode Title="GetQuestionAnswer Method " Url="html/04649822-1966-1c1c-ea62-9c3ce1343fa4.htm" />
+          <HelpTOCNode Id="56470ff3-a1a8-492f-935d-e33e638ac982" Title="StartExamAttempt Method " Url="html/50a6939e-cd6f-0f0b-7bb9-d9d8afe1298b.htm">
+            <HelpTOCNode Title="StartExamAttempt Method (String, String, String)" Url="html/1419e6be-e551-ff5f-19f5-bd751620e28e.htm" />
+            <HelpTOCNode Title="StartExamAttempt Method (String, String, String, String)" Url="html/183c42b8-3e65-4aa0-5a33-17dbfe50f2f1.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Id="0f074953-ddb0-4888-a46f-39a8f501ab2d" Title="ExamService Properties" Url="html/ae0517c8-6b87-0934-52d8-42287f25038b.htm">
+          <HelpTOCNode Title="ServiceIdentifier Property " Url="html/53fca3af-a172-f9da-44d9-6456ed02c9e2.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d7b61fde-2510-4639-8ce9-bb1ed2c0adec" Title="Com.Pearson.Pdn.Learningstudio.Grades" Url="html/8dc6a912-04fc-e523-b64e-557de089a405.htm">
+      <HelpTOCNode Id="58635ebe-6ec0-4e95-8482-5cd6a9ca5228" Title="GradeService Class" Url="html/29752b75-3fee-c7ba-3d37-ae3a7eb96111.htm">
+        <HelpTOCNode Title="GradeService Constructor " Url="html/9db38203-7378-8952-6d62-053cdc922631.htm" />
+        <HelpTOCNode Title="GradeService Fields" Url="html/dfa9529c-f1c1-77c0-ffea-9da837445ea3.htm" />
+        <HelpTOCNode Id="bff5949a-1b03-431c-b78c-92d35bb09f9c" Title="GradeService Methods" Url="html/cdbb8daf-4cfe-3547-87a7-46556118c9a8.htm">
+          <HelpTOCNode Title="CreateCustomGradebookCategory Method " Url="html/fdfa4012-7ae3-77bc-2965-777d211a106c.htm" />
+          <HelpTOCNode Title="CreateCustomGradebookCategoryAndItem Method " Url="html/08578fe9-220a-f67a-a2f9-3c893f57f968.htm" />
+          <HelpTOCNode Title="CreateCustomGradebookItem Method " Url="html/f82c6693-c2df-8e7d-03a5-707973edf8c4.htm" />
+          <HelpTOCNode Title="CreateGrade Method " Url="html/b97e5c9b-3d28-2424-5662-d4facc6752f8.htm" />
+          <HelpTOCNode Title="CreateGradebookItemGrade Method " Url="html/22fa1449-d667-22a5-8c74-94e1ace24add.htm" />
+          <HelpTOCNode Title="DeleteCustomGradebookCategory Method " Url="html/9559cd4f-6df6-3a91-84a7-5f071b8da203.htm" />
+          <HelpTOCNode Title="DeleteCustomGradebookItem Method " Url="html/24125660-efad-1303-b463-eefbd740439b.htm" />
+          <HelpTOCNode Title="DeleteGrade Method " Url="html/f9ea1e4a-1d02-f644-61d2-f97ca2e7c7c6.htm" />
+          <HelpTOCNode Title="DeleteGradebookItemGrade Method " Url="html/97f21eb4-a81f-6571-8905-39dd6f19a293.htm" />
+          <HelpTOCNode Id="e8f3be10-4d5a-445b-b0ce-f624237be83d" Title="GetCourseGradebookUserItem Method " Url="html/086ea4f5-971b-1546-4ff7-4bdf3ceca61f.htm">
+            <HelpTOCNode Title="GetCourseGradebookUserItem Method (String, String, String)" Url="html/ad46d3f2-df39-9469-2194-720d9fae9597.htm" />
+            <HelpTOCNode Title="GetCourseGradebookUserItem Method (String, String, String, Boolean)" Url="html/f1f17364-6ab7-4b52-763f-86334e08028d.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetCourseGradebookUserItems Method " Url="html/b2886413-bce6-b82e-41e7-289dfaea03bf.htm" />
+          <HelpTOCNode Title="GetCurrentGrade Method " Url="html/4a210682-7869-6992-3314-d8d132979f74.htm" />
+          <HelpTOCNode Id="d9e3bde2-2ba7-410a-87c3-e00233d70f28" Title="GetCurrentGrades Method " Url="html/07c0852a-7cdd-5ee4-f054-9e3f5289fa74.htm">
+            <HelpTOCNode Title="GetCurrentGrades Method (String, String)" Url="html/db274e73-cb6a-56ae-73d9-8c6b188d2d9c.htm" />
+            <HelpTOCNode Title="GetCurrentGrades Method (String, Int32, Int32)" Url="html/fd420acc-0139-49a8-ca8d-000c8836f428.htm" />
+            <HelpTOCNode Title="GetCurrentGrades Method (String, String, Int32, Int32)" Url="html/769ea9ac-c2af-8a1b-9234-9ce34561d15b.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetCustomGradebookCategories Method " Url="html/562de1a3-f5c0-3072-35cc-f17ad4ef7b6c.htm" />
+          <HelpTOCNode Title="GetCustomGradebookCategory Method " Url="html/3b707542-bdf4-a0f8-9230-10615a123e1d.htm" />
+          <HelpTOCNode Title="GetCustomGradebookItem Method " Url="html/c5bc6acd-0b21-1c21-b816-89034e237676.htm" />
+          <HelpTOCNode Title="GetCustomGradebookItems Method " Url="html/c65151c1-ddfe-2698-c223-1f8d4f745da2.htm" />
+          <HelpTOCNode Id="0e5175cc-f36e-4f01-a870-0cff9472ac91" Title="GetGrade Method " Url="html/4fa73e13-eca5-2045-a9b1-b3fda324fb97.htm">
+            <HelpTOCNode Title="GetGrade Method (String, String, String)" Url="html/e3fa6119-8bb2-f0dc-2254-87bc3f6891c2.htm" />
+            <HelpTOCNode Title="GetGrade Method (String, String, String, Boolean)" Url="html/d29f417d-dae1-cbd6-0a40-5ee922df6946.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetGradebookCustomItem Method " Url="html/3b7b555e-fa81-2066-94a3-430bdd437486.htm" />
+          <HelpTOCNode Title="GetGradebookItem Method " Url="html/625dee34-911c-6627-8b88-0da90207a274.htm" />
+          <HelpTOCNode Id="a8f912bf-7dd5-4fe0-9820-d6d209479edf" Title="GetGradebookItemGrade Method " Url="html/d59e6ca9-4ee7-c350-d17f-b993c1a5839a.htm">
+            <HelpTOCNode Title="GetGradebookItemGrade Method (String, String, String)" Url="html/b28f8795-33e3-e940-2f90-9c466760188f.htm" />
+            <HelpTOCNode Title="GetGradebookItemGrade Method (String, String, String, String, Boolean, Boolean)" Url="html/bc8d18fa-736e-aee4-d5c5-e0be5804ad9a.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="172eacd9-e51d-4b89-92e2-de4f04d577a9" Title="GetGradebookItemGrades Method " Url="html/3773a34e-a437-d609-3d95-aaed18fd6c66.htm">
+            <HelpTOCNode Title="GetGradebookItemGrades Method (String, String)" Url="html/26353a28-9720-d52a-bb8a-16ec03a87280.htm" />
+            <HelpTOCNode Title="GetGradebookItemGrades Method (String, String, String, Boolean, Boolean)" Url="html/83878e73-b761-6403-769f-b51238534786.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetGradebookItems Method " Url="html/ed005eff-41e1-43f2-b19b-e67e3c56bc6e.htm" />
+          <HelpTOCNode Id="953353b3-c0e4-4d2d-b9e7-f449576f22d6" Title="GetGrades Method " Url="html/408df3f2-acde-bf89-94f5-619be5f65698.htm">
+            <HelpTOCNode Title="GetGrades Method (String, String)" Url="html/63adddab-eeef-b830-85a4-6b9102303f54.htm" />
+            <HelpTOCNode Title="GetGrades Method (String, String, Nullable(Boolean))" Url="html/b6a80266-614e-289f-9755-51c636b1e4b1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetTotalPointsAvailable Method " Url="html/61781198-6a14-daf0-ecce-a39c40a8a82b.htm" />
+          <HelpTOCNode Id="fc6f3a77-0264-4ca6-b4a3-e9b86c50e887" Title="GetUserGradebookItems Method " Url="html/826e890f-2173-34f3-465a-fa6f55e300e7.htm">
+            <HelpTOCNode Title="GetUserGradebookItems Method (String, String)" Url="html/3565ff58-cf4f-cf24-9a8c-8c59c1a5360c.htm" />
+            <HelpTOCNode Title="GetUserGradebookItems Method (String, String, Boolean, Boolean)" Url="html/f5ed9e11-0450-baf0-2bb2-957ba467718d.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="UpdateCustomGradebookCategory Method " Url="html/6cff6cd4-5b25-b3cd-95f6-25de7bd2ad67.htm" />
+          <HelpTOCNode Title="UpdateGrade Method " Url="html/8c7115b2-ef9d-d996-fc9c-29440334b428.htm" />
+          <HelpTOCNode Title="UpdateGradebookItem Method " Url="html/0527f51a-7e03-883b-5670-fe581a3d22eb.htm" />
+          <HelpTOCNode Title="UpdateGradebookItemGrade Method " Url="html/799c3cc4-1934-61b3-0cbb-8a619ebf2503.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="08836ad1-dd25-4343-8da1-0548ba3dc436" Title="GradeService Properties" Url="html/149dd715-96fc-bbd5-e707-27aaaa40b6f8.htm">
+          <HelpTOCNode Title="ServiceIdentifier Property " Url="html/3f7f28b1-23cd-7b76-1145-c9d2ad3ca347.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="684fd2e2-23d1-494c-a12a-7abe0d60f7da" Title="Com.Pearson.Pdn.Learningstudio.OAuth" Url="html/d90520e8-fb19-d468-b23e-3ffda495ed92.htm">
+      <HelpTOCNode Id="29460eea-d549-4ee4-8c18-23684192b408" Title="OAuth1SignatureService Class" Url="html/3d2d1dd6-7827-dbb0-fced-365e40eed2d1.htm">
+        <HelpTOCNode Title="OAuth1SignatureService Constructor " Url="html/62527f3c-93a9-1baa-ea48-e4c1b5829ed5.htm" />
+        <HelpTOCNode Id="6949f228-6a9c-4e77-ac44-7f0832c64557" Title="OAuth1SignatureService Methods" Url="html/b1af2508-147e-4ced-906a-f090e23ec8f2.htm">
+          <HelpTOCNode Title="GenerateOAuth1Request Method " Url="html/c28b94c2-82e9-a9a1-6929-68b3a9d3e065.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="aeb995d5-7135-4ce5-9a37-55acfb145f69" Title="OAuth2AssertionService Class" Url="html/c3ae4afa-dd0a-cf84-04a9-b0392103055e.htm">
+        <HelpTOCNode Title="OAuth2AssertionService Constructor " Url="html/a1ca37c6-ce25-9cca-d6c3-1ad9bec20f74.htm" />
+        <HelpTOCNode Id="789f4244-1b5b-46b1-b3c2-433f1f3886e5" Title="OAuth2AssertionService Methods" Url="html/5679c37d-9322-73ef-163e-e49e55d9cd36.htm">
+          <HelpTOCNode Title="GenerateOAuth2AssertionRequest Method " Url="html/4ff2a518-e6a0-a899-3ec9-9bbe8db72670.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="011dbae4-b98d-4678-8f01-a68b1e17e512" Title="OAuth2PasswordService Class" Url="html/d370625a-aaac-3b2d-3a9f-70b7885a558e.htm">
+        <HelpTOCNode Title="OAuth2PasswordService Constructor " Url="html/ac643c11-f797-9fe8-0353-3b56935f328a.htm" />
+        <HelpTOCNode Id="f0b41944-60c2-48e1-bdde-33024e80f2d3" Title="OAuth2PasswordService Methods" Url="html/ae21a3dc-d286-a28d-6215-6d8a2a07fcf2.htm">
+          <HelpTOCNode Title="GenerateOAuth2PasswordRequest Method " Url="html/7bb3a95e-bbd8-0614-a3af-bb53a259a9ea.htm" />
+          <HelpTOCNode Title="RefreshOAuth2PasswordRequest Method " Url="html/fd1684f5-edff-4862-440c-3b1c1e13c86f.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="OAuthService Interface" Url="html/7212fd81-7fc7-0603-a6f8-40a36d00ea67.htm" />
+      <HelpTOCNode Id="491bf7fa-9b9d-40cf-8ab2-d1ceb44d9bea" Title="OAuthServiceFactory Class" Url="html/f9530a88-8000-586b-0503-41814b3f5fb9.htm">
+        <HelpTOCNode Title="OAuthServiceFactory Constructor " Url="html/4ed940ef-c39f-01df-3827-8790942fef70.htm" />
+        <HelpTOCNode Id="87db7142-9599-447f-9a2a-25a16ade4b39" Title="OAuthServiceFactory Fields" Url="html/f4ba05f3-5494-d3d1-4599-088e5465b4ca.htm">
+          <HelpTOCNode Title="configuration Field" Url="html/be6c83ec-956d-0c5b-6bf1-9e2ac9bdf859.htm" />
+          <HelpTOCNode Title="oauth1SignatureService Field" Url="html/6b4b7496-6f33-2f3e-03e4-e7357f527968.htm" />
+          <HelpTOCNode Title="oauth2AssertionService Field" Url="html/9b2d662c-cdd3-2fbe-037f-42170b55be7e.htm" />
+          <HelpTOCNode Title="oauth2PasswordService Field" Url="html/fedbb90e-022f-5552-6a88-834bcc75e9ed.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="3841be3b-8903-4f8c-b5b6-7eae29051c38" Title="OAuthServiceFactory Methods" Url="html/9011275c-1ab6-8a9d-b5bd-c3c20353d691.htm">
+          <HelpTOCNode Title="Build(T) Method " Url="html/fd0ff636-b96c-2f64-5365-95b3c25d4505.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4beb0126-ee0e-4a94-a567-8dd8af0691e6" Title="Com.Pearson.Pdn.Learningstudio.OAuth.Config" Url="html/e8a652d2-bb20-76af-3b95-1f9b93f7fe63.htm">
+      <HelpTOCNode Id="58d45135-cfba-49d4-8f98-eaa7d6444601" Title="OAuth1SignatureConfig Class" Url="html/fde65613-c2fb-5c90-3a2a-f61581edd8ed.htm">
+        <HelpTOCNode Title="OAuth1SignatureConfig Constructor " Url="html/8d74bea3-461c-02d1-88de-38b22e287a11.htm" />
+        <HelpTOCNode Id="ac0b284a-7d45-4cd8-ae60-48cab09c04aa" Title="OAuth1SignatureConfig Properties" Url="html/3d09624f-612f-2ec5-626c-f0a9122cd5c8.htm">
+          <HelpTOCNode Title="ApplicationId Property " Url="html/5be29cb5-b17a-d15d-b20a-9853774ff311.htm" />
+          <HelpTOCNode Title="ConsumerKey Property " Url="html/0747bfa5-f9db-0732-2119-514c05520a2a.htm" />
+          <HelpTOCNode Title="ConsumerSecret Property " Url="html/0a2181ad-d728-43a4-2e04-ec8d2962965e.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="fbc4442b-cf89-4994-81fd-a82a061a92cb" Title="OAuth2AssertionConfig Class" Url="html/f3adeae2-9631-2ba6-b94b-f25d4eaba30f.htm">
+        <HelpTOCNode Title="OAuth2AssertionConfig Constructor " Url="html/7f4ba20f-dd64-cab1-a447-f2a138657fd9.htm" />
+        <HelpTOCNode Id="b6912261-67ac-4741-b02e-e13120edc51a" Title="OAuth2AssertionConfig Properties" Url="html/596be478-8872-482c-cf70-35ff9455f3aa.htm">
+          <HelpTOCNode Title="ApplicationId Property " Url="html/fb4b9d8a-80b2-4c41-77eb-8c135a3aab4e.htm" />
+          <HelpTOCNode Title="ApplicationName Property " Url="html/a63814d3-1462-6392-31c7-859911a4bb8a.htm" />
+          <HelpTOCNode Title="ClientString Property " Url="html/15286f0a-ab39-1560-deba-f0d80e686d69.htm" />
+          <HelpTOCNode Title="ConsumerKey Property " Url="html/f7bbc091-c890-3e75-0733-72ac2a58de8c.htm" />
+          <HelpTOCNode Title="ConsumerSecret Property " Url="html/1d1019e8-eed3-dd9f-8a86-b6eba417ddd7.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="7ad01870-ed53-406b-89c3-3bb0bd2fbb49" Title="OAuth2PasswordConfig Class" Url="html/9b395da2-5230-7a06-1072-1bfb1f39247e.htm">
+        <HelpTOCNode Title="OAuth2PasswordConfig Constructor " Url="html/fa1a4954-1ec3-f48e-7b32-1489a61b436d.htm" />
+        <HelpTOCNode Id="2bc0da0e-0acc-47f3-ab9d-59527bffc9b8" Title="OAuth2PasswordConfig Properties" Url="html/ed537e5c-ffce-27c7-c58b-c19730b4cc9b.htm">
+          <HelpTOCNode Title="ApplicationId Property " Url="html/54acd0ce-f076-a06b-1d25-951a8746fcd8.htm" />
+          <HelpTOCNode Title="ClientString Property " Url="html/2ae18741-a761-afda-f7ef-dff7f9d0683b.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="94881d3a-3049-40f4-9739-dfc84e870b76" Title="OAuthConfig Class" Url="html/00fbd25f-45c6-2663-0129-7d767e2e5ece.htm">
+        <HelpTOCNode Title="OAuthConfig Constructor " Url="html/7820db35-31e8-9435-baf4-0d4e4056dbab.htm" />
+        <HelpTOCNode Id="b4b99ec2-7907-41c6-b40d-12a70a4eeb87" Title="OAuthConfig Properties" Url="html/fef1f856-c36b-3b73-0ce4-074fe26cdd69.htm">
+          <HelpTOCNode Title="ApplicationId Property " Url="html/31c5e0c0-52c7-6f40-c0ca-9a15416d2655.htm" />
+          <HelpTOCNode Title="ApplicationName Property " Url="html/5aaacfb6-d68c-508d-b482-8b98b1dda0d7.htm" />
+          <HelpTOCNode Title="ClientString Property " Url="html/6733c9e4-674d-2943-c180-0dd5c2da5816.htm" />
+          <HelpTOCNode Title="ConsumerKey Property " Url="html/c726ed37-4c72-cf0c-b82a-4f8965d2e33a.htm" />
+          <HelpTOCNode Title="ConsumerSecret Property " Url="html/54f812d5-cc13-29b5-4c9b-46f5a378a0a9.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7da35a1c-f61a-47d7-b2b0-bb8a92aa3c40" Title="Com.Pearson.Pdn.Learningstudio.OAuth.Request" Url="html/b373adda-9380-c745-5cca-8e66ea486cc1.htm">
+      <HelpTOCNode Id="4433bd52-f095-411c-87c4-2cbacbc2caba" Title="OAuth1Request Class" Url="html/c4e47b6c-5879-48b5-a138-64f8635b03c6.htm">
+        <HelpTOCNode Title="OAuth1Request Constructor " Url="html/2077437f-8cd1-3ecc-4928-6da97ef8c406.htm" />
+        <HelpTOCNode Id="42c1e6e7-4c7a-4a52-bd8c-4cb409ea8c97" Title="OAuth1Request Properties" Url="html/bfda5239-2b4d-e87e-e1ab-423d1f568d1b.htm">
+          <HelpTOCNode Title="Headers Property " Url="html/74f354c0-108f-d005-0d99-41ee328f8692.htm" />
+          <HelpTOCNode Title="Signature Property " Url="html/1733aee9-7f11-5faf-9ecf-2acac6982369.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="e9a0539c-e8f6-4808-be20-3abc6f56f5f6" Title="OAuth2Request Class" Url="html/d0048280-1ca0-55c3-9893-fac75b71aaa7.htm">
+        <HelpTOCNode Title="OAuth2Request Constructor " Url="html/bca40695-c8e4-870d-ca00-b9a73fab2d6d.htm" />
+        <HelpTOCNode Id="c7cb3823-77c8-4955-9fc4-201c3dcc4166" Title="OAuth2Request Properties" Url="html/2657fb33-cbfa-1652-d089-b27fad9220a3.htm">
+          <HelpTOCNode Title="AccessToken Property " Url="html/b57ba436-1aa7-fbed-c7f7-4041509d5a9e.htm" />
+          <HelpTOCNode Title="CreationTime Property " Url="html/d62e61f5-f619-6051-1bca-731e6e5d241e.htm" />
+          <HelpTOCNode Title="ExpirationTime Property " Url="html/a75972b3-36ee-834f-a795-98ea61849db9.htm" />
+          <HelpTOCNode Title="ExpiresInSeconds Property " Url="html/80bc6ddc-5235-8eae-103a-e9e0f364e99b.htm" />
+          <HelpTOCNode Title="Headers Property " Url="html/07189b7f-ef2b-9bd2-72c4-19dbb4f21984.htm" />
+          <HelpTOCNode Title="RefreshToken Property " Url="html/4089acb2-4fc0-d3b9-6c64-b9529d8d17d6.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="52e1b1cb-28d9-4d4f-93e8-5699d0d666bb" Title="OAuthRequest Interface" Url="html/40660cee-fa00-3ec9-3ef3-c17320af32db.htm">
+        <HelpTOCNode Id="2b1ad7b1-ce66-436f-9fe5-5588c355ce11" Title="OAuthRequest Properties" Url="html/4db53cd0-e64b-f83c-5b99-f8fbc5325e18.htm">
+          <HelpTOCNode Title="Headers Property " Url="html/a9fd2c27-c204-b36d-ff03-c543b679db78.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5bc58436-157f-4bf0-8403-90c811c6b6ee" Title="Com.Pearson.Pdn.Learningstudio.Utility" Url="html/c4053315-eb4f-33e0-5f52-e94101b1c456.htm">
+      <HelpTOCNode Id="e36ab0e4-3db0-4027-a774-318e33cb5b3d" Title="AuthHelper Class" Url="html/e746d351-985a-da6c-a7ae-7bcb1dcbf139.htm">
+        <HelpTOCNode Id="3f258ac5-6eaf-4df6-b864-b4ed729cd032" Title="AuthHelper Methods" Url="html/36445dc4-6f74-c07a-6246-407af792163f.htm">
+          <HelpTOCNode Title="GenerateCmac Method " Url="html/d78856a9-485b-6b1d-a0d7-a0f058f6395f.htm" />
+          <HelpTOCNode Title="GetNonce Method " Url="html/abbc1de2-554c-1e1b-cc4e-1304f2c76231.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="59e33f6d-7fa1-424e-9fee-db7b6dece143" Title="ConfigManager Class" Url="html/c671e534-f799-15d0-02d1-e883e81b97bf.htm">
+        <HelpTOCNode Title="ConfigManager Constructor " Url="html/7106ffce-e0ec-90f8-3d70-a59363e38883.htm" />
+        <HelpTOCNode Id="1c3230c1-1fa4-4d40-8b65-76030c207a47" Title="ConfigManager Properties" Url="html/e7ac6b27-2db8-f53e-0d55-bfdd4d5a9884.htm">
+          <HelpTOCNode Title="AdminUserId Property " Url="html/98ce3d9f-f640-b6f0-e366-e75bccf7b273.htm" />
+          <HelpTOCNode Title="AdminUsername Property " Url="html/257d1dc6-dfe7-dc89-18a2-468e1096d03c.htm" />
+          <HelpTOCNode Title="ApplicationId Property " Url="html/a2d8718e-3d52-a447-8350-3ed7f70d7298.htm" />
+          <HelpTOCNode Title="ApplicationName Property " Url="html/38fec6dc-e1fa-5384-4fd5-d56ccd6a8dca.htm" />
+          <HelpTOCNode Title="ClientString Property " Url="html/f4725958-1bf6-3a91-c752-b9974a528117.htm" />
+          <HelpTOCNode Title="ConsumerKey Property " Url="html/dc7981a5-af83-6f03-e56c-e783f7d73adc.htm" />
+          <HelpTOCNode Title="ConsumerSecret Property " Url="html/b443e1b6-a005-d480-8702-41a2da9a691b.htm" />
+          <HelpTOCNode Title="CourseId Property " Url="html/db84ad7d-b8fe-3511-0c87-031734cfb6a6.htm" />
+          <HelpTOCNode Title="EssayQuestionType Property " Url="html/20e1122c-1767-e08c-066c-122e23c86bd4.htm" />
+          <HelpTOCNode Title="ExamId Property " Url="html/7f8f3057-33aa-d707-a7ff-dc87937ed25a.htm" />
+          <HelpTOCNode Title="FillInTheBlankQuestionType Property " Url="html/71387fbc-e04f-2038-2bfe-ab50b969af2e.htm" />
+          <HelpTOCNode Title="GradebookItemId Property " Url="html/577e4806-683d-2804-0613-0f906ed87091.htm" />
+          <HelpTOCNode Title="GradeCustomerCategoriesId Property " Url="html/94c1b1ea-4ea2-09dd-8f10-7c01baab8184.htm" />
+          <HelpTOCNode Title="GradeCustomerCategoriesMultiple Property " Url="html/3da9905d-9193-89f7-7a9e-5110ce1fb303.htm" />
+          <HelpTOCNode Title="GradeCustomerCategoriesSingle Property " Url="html/5097240c-9d2b-d078-89ce-0428f1216f30.htm" />
+          <HelpTOCNode Title="GradeCustomerCategoriesURL Property " Url="html/6953be39-8669-9c1f-d656-7e0e8d570de1.htm" />
+          <HelpTOCNode Title="ItemId Property " Url="html/574c1dae-7c28-1b83-6f48-cb7e65727875.htm" />
+          <HelpTOCNode Title="ManyMultipleChoiceQuestionType Property " Url="html/534e6e24-0573-8413-964f-d9303e204d76.htm" />
+          <HelpTOCNode Title="MatchingQuestionType Property " Url="html/49d8a357-0501-81aa-9b06-ce8cb5cf078f.htm" />
+          <HelpTOCNode Title="MsofficedocumentContentPath Property " Url="html/546e8624-bf6d-e2bf-0475-dc9b5dd81ee0.htm" />
+          <HelpTOCNode Title="MsofficedocumentId Property " Url="html/042ecc77-86c5-88a8-7fe7-f4305327bfa2.htm" />
+          <HelpTOCNode Title="MultimediaContentPath Property " Url="html/444448ac-b553-6e98-248f-f888d6012a98.htm" />
+          <HelpTOCNode Title="MultimediaId Property " Url="html/e2f10745-a316-771a-77d6-e20f010009f3.htm" />
+          <HelpTOCNode Title="MultiplechoiceQuestionType Property " Url="html/68fa05fc-438f-a80d-4d32-d5bb0db01629.htm" />
+          <HelpTOCNode Title="Password Property " Url="html/b8ba72bf-2377-77ef-a53c-874fda54daeb.htm" />
+          <HelpTOCNode Title="PathCoursesGradebookCustomCategories Property " Url="html/c6f67efb-0efb-d9cc-6551-9d97d40dcb45.htm" />
+          <HelpTOCNode Title="PathCoursesGradebookCustomCategories_ Property " Url="html/f89a80b1-1010-181e-2fa7-f851582788e5.htm" />
+          <HelpTOCNode Title="PathCoursesMsOfficeDocumentsOriginalDocument Property " Url="html/bc8402c1-10ad-23a8-7de5-7ea6be2eba90.htm" />
+          <HelpTOCNode Title="ProtectedExamId Property " Url="html/8eb97858-2afd-d1c6-f206-71950c239ea3.htm" />
+          <HelpTOCNode Title="ProtectedExamPassword Property " Url="html/22b1af35-4d3c-8131-dd0a-14dfc993dec2.htm" />
+          <HelpTOCNode Title="ResponseId Property " Url="html/d74f10e3-9244-1654-bd2e-e5951751d71a.htm" />
+          <HelpTOCNode Title="SectionId Property " Url="html/ebbd49ca-bed0-9402-6494-9f32d8990d36.htm" />
+          <HelpTOCNode Title="ShortAnswerQuestionType Property " Url="html/e1a71336-2ef0-4073-9ac2-060addd1a13e.htm" />
+          <HelpTOCNode Title="StudentUserId Property " Url="html/15b22b68-3008-6ae4-c19d-adf4141b9677.htm" />
+          <HelpTOCNode Title="StudentUsername Property " Url="html/265df8f2-99f0-c99b-d85e-18f1881521e3.htm" />
+          <HelpTOCNode Title="TaUserId Property " Url="html/b54ccd99-206c-f902-f4e0-1c2c52b72aa1.htm" />
+          <HelpTOCNode Title="TaUsername Property " Url="html/d1b4d5e3-2326-b71c-7d7f-73838a97f267.htm" />
+          <HelpTOCNode Title="TeacherPassword Property " Url="html/c3766805-7929-7071-9ffb-e3a63fae2609.htm" />
+          <HelpTOCNode Title="TeacherUserId Property " Url="html/ab30b708-b992-de8c-523f-47497a0b0ce6.htm" />
+          <HelpTOCNode Title="TeacherUsername Property " Url="html/db342202-0be5-7ce3-5a7d-93f6d47ba73b.htm" />
+          <HelpTOCNode Title="ThreadId Property " Url="html/2329c48a-53cb-373a-b497-f3a85cb5228d.htm" />
+          <HelpTOCNode Title="TopicId Property " Url="html/8a7a887c-cb46-47b5-a645-9f5be3ecca67.htm" />
+          <HelpTOCNode Title="TrueFalseQuestionType Property " Url="html/1de672e0-3f93-4f7a-cfa6-fafe86b1239b.htm" />
+          <HelpTOCNode Title="UnitId Property " Url="html/9ce31563-c275-4177-d7eb-cf8df9ce0835.htm" />
+          <HelpTOCNode Title="Username Property " Url="html/5de3f2c8-625f-bdfa-6d60-9f07fc4747ea.htm" />
+          <HelpTOCNode Title="WebcontentuploadContentPath Property " Url="html/7edc4102-0eb5-a64b-9bd8-675aef25b874.htm" />
+          <HelpTOCNode Title="WebcontentuploadId Property " Url="html/e6970a5f-3b64-ad6a-cc65-7aa3b88fb7a4.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="75440513-577c-4b26-9dee-246f87dc1990" Title="ConfigUtil Class" Url="html/2514227e-457c-3662-eebc-9d3966788fa7.htm">
+        <HelpTOCNode Title="ConfigUtil Constructor " Url="html/831ce59d-df38-1470-646e-5c15b1a1144d.htm" />
+        <HelpTOCNode Id="0ee82acf-d47b-45a5-9a0e-4bf16f6fb29e" Title="ConfigUtil Methods" Url="html/2bccc7bd-a61f-775a-8e97-89c038eca056.htm">
+          <HelpTOCNode Title="GetConfigurationString Method " Url="html/fa3a368d-fc59-b2f2-a7ae-e402cddebb5d.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="e6308944-0811-4893-b926-ddc9566dfcee" Title="DateTimeHelper Class" Url="html/29f26fcf-d7e0-433c-d10b-7f97c16afe76.htm">
+        <HelpTOCNode Id="5bd994ea-6a0e-4c10-9005-bd36b82ec71d" Title="DateTimeHelper Methods" Url="html/a61eef5a-c403-83f3-a432-ffecd9fe2f9c.htm">
+          <HelpTOCNode Title="CurrentUnixTimeMilliSeconds Method " Url="html/a3aea755-8327-0904-5fdd-302fcff3c852.htm" />
+          <HelpTOCNode Title="GetTimestamp Method " Url="html/57de2677-53df-6cc4-7f80-35822c898a95.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="EncodingType Enumeration" Url="html/1eeca95f-83e9-ba59-9c92-34296b0fbed0.htm" />
+      <HelpTOCNode Title="HttpMethod Enumeration" Url="html/47499281-1270-a738-8514-6eb7d43e0582.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

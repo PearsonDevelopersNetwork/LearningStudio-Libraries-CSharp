@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>LearningStudio Content Library in C#</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:500,700|Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../assets/css/normalize.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/prism.css">
+        <script src="../assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+	<div id="MastBar">
+		<div id="TopColorbar"> </div>
+		<div id="TitleBar">
+			<div>
+				<a href="http://pdn.pearson.com" target="_blank" title="Home"><img src="../assets/pdn-header-sm.PNG" /></a>
+				<a href="http://pdn.pearson.com" target="_blank">pdn.pearson.com</a>
+			</div>
+		</div>
+	</div>
+		
+	<article> 
+		<h1>Content &amp; Threads</h1>
+		<blockquote>
+			<h3>Documentation</h3>
+			<p>The documentation for the Content Items APIs is <a href="http://pdn.pearson.com/apis/content-items">available here</a>.</p>
+			<p>The documentation for threaded discussions is <a href="http://pdn.pearson.com/apis/threads">available here.</a></p>
+		</blockquote>
+		<blockquote>
+			<h3>API Keys</h3>
+			<p>You will need keys to work with the APIs.</p>
+			<ul>
+				<li><b>Application ID</b>: Identifies your Application for analytics and quota limits.</li> 
+				<li><b>Campus Keys</b>: A <i>Token Key Moniker (TKM)</i>, <i>Shared Secret</i>, and <i>Client String</i> identifies the LearningStudio campus where your data comes from.</li>
+			</ul>
+			<p>You can get an Application ID for your app and campus keys for our Sandbox Campus by creating an app on the PDN. <a href="http://pdn.pearson.com/learningstudio/get-a-key">Learn more here</a>.
+		</blockquote>
+		<blockquote>
+			<h3>Supported Formats</h3>
+			<p>This library only supports JSON-formatted requests.</p>
+		</blockquote>		
+		<blockquote>
+			<h3>Identifier Parameter Types</h3>
+			<p>Except where specified, all parameters types are strings including identifiers like Course ID, User ID, etc.</p>
+		</blockquote>
+
+		
+		<h4>Contents</h4>
+		<ul>
+			<li><a href="#Introduction">Introduction</a></li>
+			<li><a href="#Usage">Using the Content & Threads Library</a>
+				<ul>
+					<li><a href="#Start">Get Started - Instantiating the Object</a></li>
+					<li><a href="#Methods">Available Methods</a>
+						<ul>
+							<li><a href="#Content">Content Items</a></li>
+							<li><a href="#Threads">Threads</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		
+		<a name="Introduction"></a>
+		<h2>Introduction</h2>
+		<p>A course's content is the primary way students learn through an online course. LearningStudio supports several different types of content. Each content type is a different API set, and this library exposes a method for each type of content.</p>
+		<p><strong>Text/Multimedia</strong> content is created using the rich text editor built into LearningStudio, and is simply HTML. This HTML can contain images, videos, iframes, and JavaScript.</p>
+		<p><strong>MS Office Documents</strong> content is derived from an Office document (like Word or Powerpoint) that is uploaded to LearningStudio. LearningStudio offers both a converted HTML version of this content via the APIs, and the option to download the original file.</p>
+		<p><strong>Web Content Upload</strong> content is an uploaded zip file of HTML, along with all assets such as images, stylesheets, or scripts. LearningStudio shows this content as the provided HTML via the APIs, and also offers the option to download the original zip file.</p>
+		
+		<h4>Content Item Organization and IDs</h4>
+		<p>Content in LearningStudio is organized into a two-level hierarchy. The first level is the units, and the second level (nested under each unit), is the actual course content. Unit-level content items can also have content, and are always Text/Multimedia.</p>
+		<p>Each content item has an ID that you will need to retrieve the actual content. If you ever need to know whether a content item is a unit or a standard item, Unit IDs always start with 200, and standard Content Items start with 100.</p> 
+		
+		<h4>Threaded Discussions</h4> 
+		
+		<p>Threaded Discussions are not strictly considered content but are one of the most highly used tools in LearningStudio. The Threads system here works like most other standard threads, with the added ability to track when students read the threads (for reporting against learning outcomes and goals).</p> 
+		<p>A Threaded Discussion is housed in a content item, and the ID of the threaded discussion will be the content item ID. Inside a Threaded Discussion content item, there can be several topics. All activity in Threads is in response to a topic (or are responses to responses to a topic).</p> 
+
+		<h4>User Authentication and Access</h4> 
+		
+		<p>Some of these methods work with OAuth 1, but the best practice is to always use OAuth 2. Content is controlled in a way that prevents students from seeing some items before a certain date or at all, and the Threads system depends on having a user context for posting responses.</p> 
+
+		<hr>
+		
+		<a name="Usage"></a>
+		<h2>Using the Content & Threads Library</h2> 
+		
+		
+		<a name="Start"></a>
+		<h3>Instantiating the Library</h3>
+		
+		<h4>Setup</h4>
+		<p>To begin, include the classes you'll be instantiating.</p>
+		<pre><code class="language-csharp">using Com.Pearson.Pdn.Learningstudio.OAuth;
+using Com.Pearson.Pdn.Learningstudio.OAuth.Config;
+using Com.Pearson.Pdn.Learningstudio.Content;
+using Com.Pearson.Pdn.Learningstudio.Core;</code></pre>
+
+		<h4>Authentication</h4>
+		<p>You'll need to provide your authentication details (keys, client string, etc) so the Core library can handle authentication. The <code>OAuthConfig</code> class is a generic carrier for the configuration information for all authentication methods. You'll add the information you need using the following methods.</p> 
+		<pre><code class="language-csharp">OAuthConfig config = new OAuthConfig();
+config.ApplicationId = {applicationID};
+config.ApplicationName = {applicaitonName};
+config.ConsumerKey = {tokenKeyMoniker};
+config.ConsumerSecret = {sharedSecret};
+config.ClientString = {clientString};</code></pre>
+		<p>There are differences in what values are needed between the different OAuth methods. Generally, adding all five pieces of information is most flexible, but you can leave out the pieces you don't need. For example, if using OAuth 1 only (System to System calls), you don't need the Application Name or Client String.</p>
+			<p>The <code>OAuthServiceFactory</code> object instantiates the appropriate service for the authentication method you want to use. When using core, you only need to create the Factory and pass it to the Core library.</p> 
+		<pre><code class="language-csharp">OAuthServiceFactory oauthFactory = new OAuthServiceFactory(config);</code></pre>
+		
+		<h4>Requests</h4>
+		
+		<p>Next, you'll instantiate the <code>ContentService</code> class, which handles all the work of making an API call and provides C#-specific methods for the Content Items and Threads APIs. When creating the object, pass the OAuth Factory as the only parameter:</p>
+
+		<pre><code class="language-csharp">ContentService contentService = new ContentService(oauthFactory);</code></pre>
+		
+		<p>Before making an API call, set the service to the OAuth method you'll use. If using OAuth 2 for a user token, pass the user's username, and if using Password grant type, also send the password. </p> 
+		
+		<pre><code class="language-csharp">// OAuth 1
+contentService.UseOAuth1();
+
+//OAuth 2 Assertion Grant Type
+contentService.UseOAuth2({userName});
+
+//OAuth 2 Assertion Grant Type
+contentService.UseOAuth2({userName}, {password});</code></pre>
+
+		<p>Finally, use the methods detailed below to make requests.</p>
+		
+		<h4>Results</h4>
+		<p>All of the Content methods will return a <code>Response</code> object. This object has these properties:</p>
+		<table> 
+			<tr>
+				<th>Property</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td><code>string ContentType</code></td>
+				<td>The type of response, either <code>JSON</code> or <code>XML</code> if it's text-based, or the MIME type of the content if binary content.</td>
+			</tr>
+			<tr>
+				<td><code>string Content</code></td>
+				<td>The text-based body of the response from the API. It is returned as a string of either <code>JSON</code> or <code>XML</code>, and is not parsed into a native object.</td>
+			</tr>
+			<tr>
+				<td><code>sbyte[] BinaryContent</code></td>
+				<td>The binary-based body of the response from the API.</td>
+			</tr>
+			<tr>
+				<th class="middle" colspan="2">About the API Request</th>
+			</tr>
+			
+			<tr>
+				<td><code>System.Net.WebHeaderCollection Headers</code></td>
+				<td>The headers used in the request.</td>
+			</tr>
+			<tr>
+				<td><code>string Method</code></td>
+				<td>The HTTP method that was used.</td>
+			</tr>
+			<tr>
+				<td><code>System.Net.HttpStatusCode StatusCode</code></td>
+				<td>The HTTP Status Code from the API request. Example:<code>200</code>, <code>201</code>, <code>400</code>, etc. </td>
+			</tr>
+			<tr>
+				<td><code>string StatusMessage</code></td>
+				<td>The HTTP Status message from the API request. Example:<code>Created</code> or <code>Not Found</code>. </td>
+			</tr>
+			<tr>
+				<td><code>string Url</code></td>
+				<td>The URL that was called to make the request.</td>
+			</tr>
+			<tr>
+				<td><code>bool Error</code></td>
+				<td>Either <code>true</code> or <code>false</code> as to whether there was a problem with the API request.</td>
+			</tr>
+		</table>
+		
+		<h4>Example</h4>
+		<pre class="line-numbers"><code class="language-csharp">using Com.Pearson.Pdn.Learningstudio.OAuth;
+using Com.Pearson.Pdn.Learningstudio.OAuth.Config;
+using Com.Pearson.Pdn.Learningstudio.Content;
+using Com.Pearson.Pdn.Learningstudio.Core;
+
+using System;
+
+namespace ContentServiceExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string applicationId = "";   // Identifies your Application
+            string applicaitonName = ""; // No spaces for best results (e.g., MyAppName)
+            string tokenKeyMoniker = "";
+            string sharedSecret = "";
+            string clientString = "";
+            string userName = "";
+            string courseId = "";
+
+            OAuthConfig config = new OAuthConfig();
+            config.ApplicationId = applicationId;
+            config.ApplicationName = applicaitonName;   // Needed only for OAuth 2 Assertion
+            config.ConsumerKey = tokenKeyMoniker;
+            config.ConsumerSecret = sharedSecret;       // Needed only for OAuth 1 & OAuth 2 Assertion
+            config.ClientString = clientString;         // Needed only for OAuth 2
+
+            OAuthServiceFactory oauthFactory = new OAuthServiceFactory(config);
+
+            ContentService contentService = new ContentService(oauthFactory);
+            contentService.UseOAuth2(userName);
+
+            Response response = null;
+            try
+            {
+                response = contentService.GetItems(courseId);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception from GetItems: {0}", ex.StackTrace);
+				Console.ReadLine();
+                return;
+            }
+
+            if (response.Error)
+            {
+                int httpStatusCode = (int)response.StatusCode;      // 404
+                string httpStatusMessage = response.StatusMessage;  // Not Found
+
+                Console.WriteLine("{0}: {1}", httpStatusCode, httpStatusMessage);
+            }
+            else
+            {
+                string contentType = response.ContentType;  // application/json
+                string contentString = response.Content;    // { ... }
+
+                Console.WriteLine("{0}: {1}", contentType, contentString);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}</code></pre>
+
+	<hr>
+	
+	<a name="Methods"></a>
+	<h3>Available Methods</h3>
+	
+		<blockquote>
+			<h3>Identifier Overloads</h3>
+			<p>Wherever you need to pass a user ID or a course ID, you can also use username and call number overloads. For example, either of these requests would work:</p>
+			<p><code>GetLastThreadedDiscussionResponse ("12345678", "987654321");</code></p>
+			<p><code>GetLastThreadedDiscussionResponse ("loginid={CLIENT_STRING}|{USERNAME}", "ccn={CALL_NUMBER}");</code></p>
+		</blockquote>
+		
+		<br>
+	<a name="Content"></a>
+	<h4>Content Items</h4>
+	<blockquote>
+		<h3>Creating Content Not Supported</h3>
+		<p>Note that the APIs do not presently support creating content items. Content can only be created in the LearningStudio user interface.</p>
+	</blockquote> 
+
+	<br><pre><code class="language-csharp">GetItems(string courseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-admin">OAuth 2 As Administrator</span>
+	</div> -->
+
+	<ul>
+		<li>Retrieves the list of content items in the course.</li>
+		<li>This method is best used with OAuth 1 or with OAuth 2 using a Teacher's account. If a content item is not visible to a student, this method fails. Use <code>GetUserItems</code> for the safest results (particularly with students)</li> 
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/courses/courses-resources/uri-items-for-course_x">API Documentation</a></li> 
+	</ul>
+	<br><pre><code class="language-csharp">GetUserItems(string userId, string courseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>Retrieves the list of content items in the course.</li>
+		<li>This only returns the content items that user is able to see in LearningStudio.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/courses/courses-resources/uri-items-for-course_x">API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetItemHierarchy(string courseId)</code></pre>
+	<pre><code class="language-csharp">GetItemHierarchy(string courseId, string expandItems)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-admin">OAuth 2 As Administrator</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the list of content items in the course in a hierarchical format, with content items nested as children of units.</li>
+		<li>This will return all content items for the course. If using OAuth 2 and the user is not allowed to see a content item in the results, the API will fail. Use <code>GetUserItemHierarchy</code> for the safest results (particularly with students)</li>
+		<li><code>expandItems</code> is a comma-separated list of the following, if any of these are included in that list, the API will return those nodes' data as well:<ul>
+			<li><code>item</code> - return the detail of the content item</li> 
+			<li><code>item.access</code> - return the detail of the content item's access rules</li> 
+			<li><code>item.schedule</code> - return the detail of the content item's scheduling</li> 
+			<li><code>item.group</code> - return the detail of the group that is allowed to see this content item (if the course uses groups)</li></ul></li>
+		<li>This method is best used with OAuth 1 or with OAuth 2 using a Teacher's account. If a content item is not visible to a student, this method fails.</li> 
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/courses/courses-resources/uri-items-for-course_x">API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetUserItemHierarchy(string userId, string courseId)</code></pre>
+	<pre><code class="language-csharp">GetUserItemHierarchy(string userId, string courseId, string expandItems)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the list of content items in the course in a hierarchical format, with content items nested as children of units.</li>
+		<li>This only returns the content items that user is able to see in LearningStudio.</li>
+		<li><code>expandItems</code> is a comma-separated list of the following, if any of these are included in that list, the API will return those nodes' data as well:<ul>
+			<li><code>item</code> - return the detail of the content item</li> 
+			<li><code>item.access</code> - return the detail of the content item's access rules</li> 
+			<li><code>item.schedule</code> - return the detail of the content item's scheduling</li> 
+			<li><code>item.group</code> - return the detail of the group that is allowed to see this content item (if the course uses groups)</li></ul></li>
+		<li>This method is best used with OAuth 1 or with OAuth 2 using a Teacher's account. If a content item is not visible to a student, this method fails.</li> 
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/courses/courses-resources/uri-items-for-course_x">API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetItem(string courseId, string itemId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+	
+	<ul>
+		<li>Retrieves a specific content item in the course.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/courses/courses-resources/uri-items-for-course_x">API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetItemLinkDetails(string courseId, string itemId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+
+	
+	<ul>
+		<li>Retrieves the values from the "links" found in a content item payload; This includes information for the Access rules, Scheduling and a link to the Parent content item (e.g., a Unit). </li>
+		<li>The payload returned by the <code>GetItems()</code> or <code>GetItem()</code> methods would only return URLs to get the information; this method executes those URLs to give you the information contained there.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/courses/courses-resources/uri-items-for-course_x">API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetItemContent(string courseId, string itemId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	
+	<ul>
+		<li>This is a composite method that retrieves the web-ready content for a content item regardless of type (Text/Multimedia, MSOfficeDocument, or WebContentUpload).</li>
+		<li>If you want the original, unconverted document for an MSOfficeDocument or WebContentUpload content item, use <code>GetMsOfficeDocumentOriginal</code> or <code>GetWebContentUploadOriginal</code></li>
+		<li>API Documentation for <a href="http://pdn.pearson.com/pearson-learningstudio/apis/textmultimedia/textmultimedia-resources/uri-text-multimedia-items-for-course_x">Text/Multimedia</a>, <a href="http://pdn.pearson.com/pearson-learningstudio/apis/ms-office-documents/documents-resources/uri-content-for-ms-office-documents-in-course_x">MSOfficeDocuments, and <a href="http://pdn.pearson.com/pearson-learningstudio/apis/web-content-upload/web-content-upload-resources/uri-content-for-web-content-upload-item-in-course_x">WebContentUpload</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetTextMultimedias(string courseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves a list of all the Text/Multimedia content items in a course.</li>
+		<li>The results are just the content item ID and a URL to the content itself, for which you can also use the <code>GetTextMultimediasContent</code> method.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/textmultimedia/textmultimedia-resources/uri-text-multimedia-items-for-course_x">API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetTextMultimedia(string courseId, string textMediaId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves a single Text/Multimedia content items.</li>
+		<li>The result is just the content item ID and a URL to the content itself, for which you can also use the <code>GetTextMultimediasContent</code> method.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/textmultimedia/textmultimedia-resources/uri-text-multimedia-items-for-course_x">API Documentation</a></li> 
+	</ul>
+
+	<br><pre><code class="language-csharp">GetTextMultimediasContent(string courseId, string textMediaId)</code></pre>
+	<pre><code class="language-csharp">GetTextMultimediasContent(string courseId, string textMediaId, bool useSourceDomain)</code></pre>
+	<pre><code class="language-csharp">GetTextMultimediasContent(string courseId, string textMediaId, string contentPath)</code></pre>
+	<pre><code class="language-csharp">GetTextMultimediasContent(string courseId, string textMediaId, string contentPath, bool useSourceDomain)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the actual content from a Text/Multimedia item. This will typically be HTML content.</li>
+		<li><code>contentPath</code> is optional, if you happen to have the path to the content. For Text/Multimedia content this should always be <code>content.html</code>.</li>
+		<li>If <code>useSourceDomain</code> is set to <code>true</code>, the API will prepend any URLs to LearningStudio-hosted assets (like images) with a fully-qualified hostname. Otherwise, the URLs will be relative.</li> 
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/textmultimedia/textmultimedia-resources/uri-content-of-text-multimedia-item-in-course_x">API Documentation</a></li> 
+	</ul>
+
+
+	<br><pre><code class="language-csharp">GetMsOfficeDocuments(string courseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves a list of all the content items created from MS Office Documents in a course.</li>
+		<li>The results are just the content item ID and a URL to the content itself, for which you can also use the <code>GetMsOfficeDocumentContent</code> method.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/ms-office-documents/documents-resources/uri-ms-office-documents-in-course_x">API Documentation</a></li> 
+	</ul>
+
+	<br><pre><code class="language-csharp">GetMsOfficeDocument(string courseId, string msOfficeDocumentId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves a single MS Office Document content items.</li>
+		<li>The result is just the content item ID and a URL to the content itself, for which you can also use the <code>GetTextMultimediasContent</code> method.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/ms-office-documents/documents-resources/uri-ms-office-documents-in-course_x">API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetMsOfficeDocumentContent(string courseId, string msOfficeDocumentId)</code></pre>
+	<pre><code class="language-csharp">GetMsOfficeDocumentContent(string courseId, string msOfficeDocumentId, string contentPath)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the web-ready converted content from a MS Office Document content item. This will typically be HTML content.</li>
+		<li><code>contentPath</code> is optional, and is typically found from the <code>GetMsOfficeDocument</code> method - it's the last portion of the URL in the <code>contentUrl</code> property. Because this unique for each MSOfficeDocument content item, you can skip this parameter to have the method do it for you. </li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/ms-office-documents/documents-resources/uri-content-for-ms-office-documents-in-course_x">API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetMsOfficeDocumentOriginal(string courseId, string msOfficeDocumentId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the original MS Office Document that was uploaded to create this content item.</li>
+		<li>Use the binary-related methods of the <code>Response</code> object this method returns. The content will be binary and you will need to construct a file based off the item MIME type.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/ms-office-documents/documents-resources/uri-original-file-for-ms-office-documents-in-course_x">API Documentation</a></li> 
+	</ul>
+
+
+	<br><pre><code class="language-csharp">GetWebContentUploads(string courseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves a list of all the content items created from uploaded zip files of HTML pages.</li>
+		<li>The results are just the content item ID and a URL to the content itself, for which you can also use the <code>GetWebContentUploadContent</code> method.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/web-content-upload/web-content-upload-resources/uri-web-content-upload-items-for-course_x">API Documentation</a></li> 
+	</ul>
+
+
+	<br><pre><code class="language-csharp">GetWebContentUpload(string courseId, string webContentUploadId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves a single Web Content Upload content items.</li>
+		<li>The result is just the content item ID and a URL to the content itself, for which you can also use the <code>GetWebContentUploadContent</code> method.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/ms-office-documents/documents-resources/uri-ms-office-documents-in-course_x">API Documentation</a></li> 
+	</ul>
+
+	<br><pre><code class="language-csharp">GetWebContentUploadContent(string courseId, string webContentUploadId)</code></pre>
+	<pre><code class="language-csharp">GetWebContentUploadContent(string courseId, string webContentUploadId, string contentPath)</code></pre>	
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the web-ready converted content from a Web Content Upload content item. This will typically be HTML content.</li>
+		<li><code>contentPath</code> is optional, and is typically found from the <code>GetWebContentUpload</code> method - it's the last portion of the URL in the <code>contentUrl</code> property. Because this unique for each WebContentUpload content item, you can skip this parameter to have the method do it for you. </li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/web-content-upload/web-content-upload-resources/uri-content-for-web-content-upload-item-in-course_x">API Documentation</a></li> 
+	</ul>
+
+
+	<br><pre><code class="language-csharp">GetWebContentUploadOriginal(string courseId, string webContentUploadId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the original zip file that was uploaded to create this content item.</li>
+		<li>Use the binary-related methods of the <code>Response</code> object this method returns. The content will be binary and you will need to construct a file based off the item MIME type.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/web-content-upload/web-content-upload-resources/uri-original-file-for-web-content-upload-item-in-course_x">API Documentation</a></li> 
+	</ul>
+	
+	
+	
+	<br>
+	<a name="Threads"></a>
+	<h4>Threaded Discussions</h4>
+	
+	<pre><code class="language-csharp">GetThreadedDiscussions(string courseId)</code></pre>
+	<pre><code class="language-csharp">GetThreadedDiscussions(string courseId, bool useSourceDomain)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>Retrieves a list of all the content items that are threaded discussions.</li>
+		<li>The main results are ID of the Threaded Discussion, and the introductory Text (HTML).</li>
+		<li>If <code>useSourceDomain</code> is set to <code>true</code>, the API will prepend any URLs to LearningStudio-hosted assets (like images) with a fully-qualified hostname. Otherwise, the URLs will be relative.</li> 
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-threads-for-course_x">API Documentation</a></li> 
+	</ul>
+
+
+	<br><pre><code class="language-csharp">GetThreadedDiscussionTopics(string courseId, string threadId)</code></pre>
+	<pre><code class="language-csharp">GetThreadedDiscussionTopics(string courseId, string threadId, bool useSourceDomain)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>Retrieves the topics inside a threaded discussion. There is at least one topic, and there may be several. Responses will be posted to Topics.</li>
+		<li>The main results are ID of the Topic, it's title, and possibly a description (HTML).</li>
+		<li>If <code>useSourceDomain</code> is set to <code>true</code>, the API will prepend any URLs to LearningStudio-hosted assets (like images) with a fully-qualified hostname. Otherwise, the URLs will be relative.</li> 
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-topics-for-thread_x">API Documentation</a></li> 
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionTopic(string courseId, string threadId, string topicId)</code></pre>
+	<pre><code class="language-csharp">GetThreadedDiscussionTopic(string courseId, string threadId, string topicId, bool useSourceDomain)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>Retrieves a single topics from inside a threaded discussion. Responses will be posted to Topics.</li>
+		<li>The main results are ID of the Topic, it's title, and possibly a description (HTML).</li>
+		<li>If <code>useSourceDomain</code> is set to <code>true</code>, the API will prepend any URLs to LearningStudio-hosted assets (like images) with a fully-qualified hostname. Otherwise, the URLs will be relative.</li> 
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-topics-for-thread_x">API Documentation</a></li> 
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionTopicHierarchy(string courseId, string threadId, string topicId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the complete tree of responses to a topic - including children and grandchildren</li>
+		<li>The API returns a <code>links</code> with URLs to the actual response data. You can parse the Response ID from these URLs and use them in the methods below where you find a <code>responseId</code> parameter.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-response-hierarchy-for-topic_x">API Documentation</a></li> 
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionResponseHierarchy(string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the complete tree of responses to a response - including children and grandchildren.</li>
+		<li>The starting point for this API is a response to a topic or a response to a response. A possible use case is when you want to show a user all the responses to one of their posts.</li> 
+		<li>The API returns a <code>links</code> with URLs to the actual response data. You can parse the Response ID from these URLs and use them in the methods below where you find a <code>responseId</code> parameter.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-response-hierarchy-for-topic_x">API Documentation</a></li> 
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionResponseBranch(string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+	<ul>
+		<li>Retrieves the tree of responses <i>from the topic</i> to the specified response ID.</li>
+		<li>Whereas <code>GetThreadedDiscussionResponseHierarchy</code> starts from the response and retrieves its children, this method gets the response's ancestors. .</li> 
+		<li>The API returns a <code>links</code> with URLs to the actual response data. You can parse the Response ID from these URLs and use them in the methods below where you find a <code>responseId</code> parameter.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-response-branch-for-response_x">API Documentation</a></li> 
+	</ul>
+
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionTopicUserViewResponses(string userId, string courseId, string threadId, string topicId)</code></pre>
+	<pre><code class="language-csharp">GetThreadedDiscussionTopicUserViewResponses(string userId, string courseId, string threadId, string topicId, int depth)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+
+	<ul>
+		<li>Retrieves a list of the responses to a topic and whether the specified user has read each post.</li>
+		<li>The results are flat, not hierarchical, but do include the title and body of the response (but not the posted date or author information).</li> 
+		<li><code>depth</code> is an optional parameter that defines the maximum number of levels to traverse when you retrieve all responses under the topic. For example, specifying a depth of 1 only retrieves responses made directly to the topic.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-users-view-status-for-topic_x">API Documentation</a></li>
+	</ul>
+
+
+	<br><pre><code class="language-csharp">GetThreadedDiscussionUserViewResponses(string userId, string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<pre><code class="language-csharp">GetThreadedDiscussionUserViewResponses(string userId, string courseId, string threadId, string topicId, string responseId, int depth)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Retrieves a list of the responses <i>to a response</i> and whether the specified user has read each post.</li>
+		<li>The starting point for this API is a response to a topic or a response to a response.</li> 
+		<li>The results are flat, not hierarchical, but do include the title and body of the response (but not the posted date or author information).</li> 
+		<li><code>depth</code> is an optional parameter that defines the maximum number of levels to traverse when you retrieve all responses under the topic. For example, specifying a depth of 1 only retrieves responses made directly to the specified response.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-user-view-status-for-response-to-response.html">API Documentation</a></li> 
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionTopicResponseCount(string userId, string courseId, string threadId, string topicId)</code></pre>
+	<pre><code class="language-csharp">GetThreadedDiscussionTopicResponseCount(string userId, string courseId, string threadId, string topicId, int depth)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+
+	<ul>
+		<li>Calculates the total number of responses to a topic, including all children and grandchildren (unless limited by <code>depth</code>).</li>
+		<li>Three properties are returned: <ul>
+			<li><code>totalResponseCount</code> is the total number of responses</li>
+			<li><code>unreadResponseCount</code> is the number of responses the specified user has <i>not</i> yet read.</li>
+			<li><code>personalResponseCount</code> is the number of responses posted by the specified user.</li>
+		</ul></li>
+		<li><code>depth</code> is an optional parameter that defines the maximum number of levels to traverse when you retrieve all responses under the topic. For example, specifying a depth of 1 only retrieves responses made directly to the topic.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-response-counts-for-topic-by-user_x">API Documentation</a></li>
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionResponseCount(string userId, string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<pre><code class="language-csharp">GetThreadedDiscussionResponseCount(string userId, string courseId, string threadId, string topicId, string responseId, int depth)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Calculates the total number of responses to a response, including all children and grandchildren of that response (unless limited by <code>depth</code>).</li>
+		<li>The starting point for this API is a response to a topic or a response to a response. A possible use case is when you want to show a user how many new responses there are to one of their posts.</li> 
+		<li>Three properties are returned: <ul>
+			<li><code>totalResponseCount</code> is the total number of responses</li>
+			<li><code>unreadResponseCount</code> is the number of responses the specified user has <i>not</i> yet read.</li>
+			<li><code>personalResponseCount</code> is the number of responses posted by the specified user.</li>
+		</ul></li>
+		<li><code>depth</code> is an optional parameter that defines the maximum number of levels to traverse when you retrieve all responses under the response. For example, specifying a depth of 1 only retrieves responses made directly to the response.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-response-counts-for-response-by-user_x">API Documentation</a></li>
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionResponseAuthor(string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>Retrieves the user ID, first and last name, and email address on record for the author of a response (post).</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-response-author_x">API Documentation</a></li>
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionTopicResponseAndAuthorComposite(string courseId, string threadId, string topicId)</code></pre>
+	<pre><code class="language-csharp">GetThreadedDiscussionTopicResponseAndAuthorComposite(string courseId, string threadId, string topicId, int depth)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>This is a composite API that returns the responses to a topic with both the post detail and the author detail.</li>
+		<li>The post information is the same as <code>getThreadedDiscussionResponse</code>.</li>
+		<li>The author information is the same as <code>getThreadedDiscussionResponseAuthor</code>, plus the user's role type (e.g, student, professor, etc).</li>
+		<li>The results are flat, not hierarchical. Either compare the response IDs to a hierarchical listing (e.g., from <code>GetThreadedDiscussionTopicHierarchy</code>, or use the <code>depth</code> parameter to limit the levels that are returned.</li>
+		<li><code>depth</code> is an optional parameter that defines the maximum number of levels to traverse when you retrieve all responses under the topic. For example, specifying a depth of 1 only retrieves responses made directly to the topic.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-response-and-author-roster-information_x">API Documentation</a></li>
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionResponseAndAuthorComposite(string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<pre><code class="language-csharp">GetThreadedDiscussionResponseAndAuthorComposite(string courseId, string threadId, string topicId, string responseId, int depth)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>This is a composite API that returns the responses to a response with both the post detail and the author detail.</li>
+		<li>The starting point for this API is a response to a topic or a response to a response. A possible use case is when you want to show a user only those responses to one of their posts.</li> 
+		<li>The post information is the same as <code>GetThreadedDiscussionResponse</code>.</li>
+		<li>The author information is the same as <code>GetThreadedDiscussionResponseAuthor</code>, plus the user's role type (e.g, student, professor, etc).</li>
+		<li>The results are flat, not hierarchical. Either compare the response IDs to a hierarchical listing (e.g., from <code>GetThreadedDiscussionResponseHierarchy</code>, or use the <code>depth</code> parameter to limit the levels that are returned.</li>
+		<li><code>depth</code> is an optional parameter that defines the maximum number of levels to traverse when you retrieve all responses under the topic. For example, specifying a depth of 1 only retrieves responses made directly to the topic.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-response-and-author-roster-information_x">API Documentation</a></li>
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">GetLastThreadedDiscussionResponse(string userId, string courseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>Retrieves the most recent response written the specified user.</li>
+		<li>A possible use case is to get this post, and then use <code>GetThreadedDiscussionResponseHierarchy</code> to get all children to it, or <code>getThreadedDiscussionResponseCount</code> to check for any new responses to the user's last post.</li> 
+		<li><a href="http://pdn.pearson.com/uri-last-response-user">API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionResponseReadStatus(string userId, string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+
+	<ul>
+		<li>Retrieves the read status for a response.</li>
+		<li>LearningStudio tracks whether a user has read a post or not for all responses in a thread. If you are building a new threaded discussions user interface, you must update the read status using <code>UpdateThreadedDiscussionResponseReadStatus</code> when you display the post to a user.</li>
+		<li><a href="http://pdn.pearson.com/uri-read-status-response-user">API Documentation</a></li> 
+	</ul>
+	
+	
+	<br><pre><code class="language-csharp">UpdateThreadedDiscussionResponseReadStatus(string userId, string courseId, string threadId, string topicId, string responseId, string readStatus)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>Updates the read status for a response.</li>
+		<li>LearningStudio tracks whether a user has read a post or not for all responses in a thread. If you are building a new threaded discussions user interface, you must update the read status this method when you display the post to a user.</li>
+		<li><code>readStatus</code> is a JSON-formatted payload that is <code>PUT</code> to the API.</li>
+		<li><a href="http://pdn.pearson.com/uri-read-status-response-user#requestbody">Sample Request Payload in the API Documentation</a></li> 
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionResponse(string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>This retrieves the detail of the specified response.</li>
+		<li>Data included is the ID, title, post body, links to information about the author, and the date the response was posted.</li> 
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-responses-for-topic_x#example2">API Documentation</a></li>
+	</ul>
+	
+	<br><pre><code class="language-csharp">GetThreadedDiscussionResponses(string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth1">OAuth 1</span>
+		<span class="oauth2-all">OAuth 2 (All Role Types)</span>
+	</div> -->
+
+	<ul>
+		<li>This retrieves the responses to a response.</li>
+		<li>Data included is the ID, title, post body, links to information about the author, and the date the response was posted.</li> 
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-response-to-response_x">API Documentation</a></li>
+	</ul>
+	
+	<br><pre><code class="language-csharp">CreateThreadedDiscussionResponse(string courseId, string threadId, string topicId, string responseMessage)</code></pre>
+	<pre><code class="language-csharp">CreateThreadedDiscussionResponse(string courseId, string threadId, string topicId, string responseId, string responseMessage)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+
+	<ul>
+		<li>This method allows you to create a response in a thread.</li>
+		<li>If posting a response directly to the topic, set <code>responseId</code> to <code>NULL</code>.</li>
+		<li><code>responseMessage</code> is the JSON-formatted payload to send to the API.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-responses-for-topic_x#example3">Sample Payload in the API Documentation</a></li>
+	</ul>
+	
+	<br><pre><code class="language-csharp">UpdateThreadedDiscussionResponse(string courseId, string threadId, string topicId, string responseId, string responseMessage)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-student">OAuth 2 As Student</span>
+	</div> -->
+	<ul>
+		<li>This method allows you to edit a response in a thread.</li>
+		<li><code>responseMessage</code> is the JSON-formatted payload to send to the API. You may exclude any properties you aren't changing.</li>
+		<li>Note, students cannot change their posts - only users of type ADMIN, PROF, or TA may use this method.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-responses-for-topic_x#example4">Sample Payload in the API Documentation</a></li>
+	</ul>
+	
+	<br><pre><code class="language-csharp">DeleteThreadedDiscussionResponse(string courseId, string threadId, string topicId, string responseId)</code></pre>
+	<!-- <div class="authmethods">
+		<span class="oauth2-teacher">OAuth 2 As Teacher</span>
+		<span class="oauth2-ta">OAuth 2 As TA</span>
+		<span class="oauth2-admin">OAuth 2 As Admnistrator</span>
+	</div> -->
+	<ul>
+		<li>This method allows you to delete a response in a thread and all the children of the response.</li>
+		<li>Note, students cannot delete their posts - only users of type ADMIN, PROF, or TA may use this method.</li>
+		<li><a href="http://pdn.pearson.com/pearson-learningstudio/apis/threads/threads-resources/uri-responses-for-topic_x">API Documentation</a></li>
+	</ul>
+	
+	
+	</article> 	
+	<footer>
+		&copy;2014 Pearson Education Inc. Libraries released under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 License</a>. For help with these libraries or the APIs, please use the <a href="https://community.pdn.pearson.com" target="_blank">PDN Developer Community</a>.
+	</footer>
+        <script src="../assets/js/prism.js"></script>
+
+    </body>
+</html>

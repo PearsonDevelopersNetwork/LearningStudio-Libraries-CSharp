@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>LearningStudio Libraries in C#</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:500,700|Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../assets/css/normalize.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/prism.css">
+        <script src="../assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+	<div id="MastBar">
+		<div id="TopColorbar"> </div>
+		<div id="TitleBar">
+			<div>
+				<a href="http://pdn.pearson.com" target="_blank" title="Home"><img src="../assets/pdn-header-sm.PNG" /></a>
+				<a href="http://pdn.pearson.com" target="_blank">pdn.pearson.com</a>
+			</div>
+		</div>
+	</div>
+		
+	<article> 
+		<h1>Core</h1>
+		
+		<blockquote>
+			<h3>API Keys</h3>
+			<p>You will need keys to work with the APIs.</p>
+			<ul>
+				<li><b>Application ID</b>: Identifies your Application for analytics and quota limits.</li> 
+				<li><b>Campus Keys</b>: A <i>Token Key Moniker (TKM)</i>, <i>Shared Secret</i>, and <i>Client String</i> identifies the LearningStudio campus where your data comes from.</li>
+			</ul>
+			<p>You can get an Application ID for your app and campus keys for our Sandbox Campus by creating an app on the PDN. <a href="http://pdn.pearson.com/learningstudio/get-a-key">Learn more here</a>.
+		</blockquote>
+				
+		<a name="Introduction"></a>
+		<h2>Introduction</h2>
+		<p>LearningStudio Course APIs are REST-based services, and all calls must be authenticated with either an OAuth 1 signature or with an OAuth 2 user token. While not difficult to create your own tools for making these requests, the Core library simplifies the effort by automatically handling authentication.</p> 
+		<p>This library uses the <a href="library-authentication.html">Authentication</a> library, so you need to provide the same configuration information as described there. However, Core will do the heavy lifting of generating and managing signatures and tokens for the requests.</p> 
+		 
+		<hr>
+		
+		<a name="Usage"></a>
+		<h2>Using Core</h2> 
+		<!-- <blockquote>
+			<p>Note, when used on it's own, Authentication library only generates the relevant signature or token. It does not execute an API call (other than the token request).</p> 
+		</blockquote>  -->
+		
+		
+		<h4>Setup</h4>
+		<p>To begin, include the classes you'll be instantiating.</p>
+		<pre><code class="language-csharp">using Com.Pearson.Pdn.Learningstudio.OAuth;
+using Com.Pearson.Pdn.Learningstudio.OAuth.Config;
+using Com.Pearson.Pdn.Learningstudio.Core;
+using Com.Pearson.Pdn.Learningstudio.Utility;</code></pre>
+
+		<h4>Authentication</h4>
+		<p>You'll need to provide your authentication details (keys, client string, etc) so the Core library can handle authentication. The <code>OAuthConfig</code> class is a generic carrier for the configuration information for all authentication methods. You'll add the information you need using the following methods.</p> 
+		<pre><code class="language-csharp">OAuthConfig config = new OAuthConfig();
+config.ApplicationId = {applicationID};
+config.ApplicationName = {applicaitonName};
+config.ConsumerKey = {tokenKeyMoniker};
+config.ConsumerSecret = {sharedSecret};
+config.ClientString = {clientString};</code></pre>
+		<p>There are differences in what values are needed between the different OAuth methods. Generally, adding all five pieces of information is most flexible, but you can leave out the pieces you don't need. For example, if using OAuth 1 only (System to System calls), you don't need the Application Name or Client String.</p>
+			<p>The <code>OAuthServiceFactory</code> object instantiates the appropriate service for the authentication method you want to use. When using core, you only need to create the Factory and pass it to the Core library.</p> 
+		<pre><code class="language-csharp">OAuthServiceFactory oauthFactory = new OAuthServiceFactory(config);</code></pre>
+		
+		<h4>Requests</h4>
+		
+		<p>Next, you'll instantiate the Core library's <code>BasicService</code>, which handles all the work of making an API call. When creating the object, pass the OAuth Factory as the only parameter:</p>
+
+		<pre><code class="language-csharp">BasicService basicService = new BasicService(oauthFactory);</code></pre>
+		
+		<p>Before making an API call, set the service to the OAuth method you'll use. If using OAuth 2 for a user token, pass the user's username, and if using Password grant type, also send the password. </p> 
+		
+		<pre><code class="language-csharp">// OAuth 1
+basicService.UseOAuth1();
+
+//OAuth 2 Assertion Grant Type
+basicService.UseOAuth2({userName});
+
+//OAuth 2 Assertion Grant Type
+basicService.UseOAuth2({userName}, {password});</code></pre>
+
+		<p>Finally, use the <code>DoMethod</code> method to make the request. This method has the following signature:</p>
+		
+		<pre><code class="language-csharp">DoMethod(Com.Pearson.Pdn.LearningStudio.Utility.HttpMethod method, string relativeUrl, string body)</code></pre>
+		<pre><code class="language-csharp">DoMethod(IDictionary&lt;string,string&gt; extraHeaders, Com.Pearson.Pdn.LearningStudio.Utility.HttpMethod method, string relativeUrl, string body)</code></pre>
+		
+		<table> 
+			<tr>
+				<th>Parameter</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td><code>method</code></td>
+				<td>An enumeration of the standard HTTP Methods <code>GET</code>, <code>POST</code>, <code>PUT</code>, or <code>DELETE</code>; implemented by the Com.Pearson.Pdn.Learningstudio.Utility class. Required for all requests.</td>
+			</tr>
+			<tr>
+				<td><code>relativeUrl</code></td>
+				<td>The URI of the API endpoint you're calling; this is only the "path" portion of the request. Required for all requests.<br>Example: <code>/me/courses</code></td>
+			</tr>
+			<tr>
+				<td><code>body</code></td>
+				<td>The body of the API request. Required for <code>POST</code> and <code>PUT</code> operations only.</td>
+			</tr>
+			<tr>
+				<td><code>extraHeaders</code></td>
+				<td>An associative collection of any additional headers you need to send with the request in key value pair format. The key should be the header name, and the value the header value.  This is used primarily by the other LearningStudio libraries. <br>Example: <code>extraHeaders["Content-Type"] = "application/json";</code></td>
+			</tr>
+		</table> 
+		
+		<h4>Results</h4>
+		<p>When you call <code>DoMethod</code>, it will return a <code>Response</code> object. This object has these methods:</p>
+		<table> 
+			<tr>
+				<th>Property</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td><code>string ContentType</code></td>
+				<td>The type of response, either <code>JSON</code> or <code>XML</code> if it's text-based, or the MIME type of the content if binary content.</td>
+			</tr>
+			<tr>
+				<td><code>string Content</code></td>
+				<td>The text-based body of the response from the API. It is returned as a string of either <code>JSON</code> or <code>XML</code>, and is not parsed into a native object.</td>
+			</tr>
+			<tr>
+				<td><code>sbyte[] BinaryContent</code></td>
+				<td>The binary-based body of the response from the API.</td>
+			</tr>
+			<tr>
+				<th class="middle" colspan="2">About the API Request</th>
+			</tr>
+			
+			<tr>
+				<td><code>System.Net.WebHeaderCollection Headers</code></td>
+				<td>The headers used in the request.</td>
+			</tr>
+			<tr>
+				<td><code>string Method</code></td>
+				<td>The HTTP method that was used.</td>
+			</tr>
+			<tr>
+				<td><code>System.Net.HttpStatusCode StatusCode</code></td>
+				<td>The HTTP Status Code from the API request. Example:<code>200</code>, <code>201</code>, <code>400</code>, etc. </td>
+			</tr>
+			<tr>
+				<td><code>string StatusMessage</code></td>
+				<td>The HTTP Status message from the API request. Example:<code>Created</code> or <code>Not Found</code>. </td>
+			</tr>
+			<tr>
+				<td><code>string Url</code></td>
+				<td>The URL that was called to make the request.</td>
+			</tr>
+			<tr>
+				<td><code>bool Error</code></td>
+				<td>Either <code>true</code> or <code>false</code> as to whether there was a problem with the API request.</td>
+			</tr>
+		</table>
+		
+		<h4>Example</h4>
+		<pre class="line-numbers"><code class="language-csharp">using Com.Pearson.Pdn.Learningstudio.OAuth;
+using Com.Pearson.Pdn.Learningstudio.OAuth.Config;
+using Com.Pearson.Pdn.Learningstudio.Core;
+using Com.Pearson.Pdn.Learningstudio.Utility;
+
+using System;
+
+namespace BasicServiceExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string applicationId = "";   // Identifies your Application
+            string applicaitonName = ""; // No spaces for best results (e.g., MyAppName)
+            string tokenKeyMoniker = "";
+            string sharedSecret = "";
+            string clientString = "";
+            string userName = "";
+            string url = "";             // e.g., /me
+
+            OAuthConfig config = new OAuthConfig();
+            config.ApplicationId = applicationId;
+            config.ApplicationName = applicaitonName;   // Needed only for OAuth 2 Assertion
+            config.ConsumerKey = tokenKeyMoniker;
+            config.ConsumerSecret = sharedSecret;       // Needed only for OAuth 1 & OAuth 2 Assertion
+            config.ClientString = clientString;         // Needed only for OAuth 2
+
+            OAuthServiceFactory oauthFactory = new OAuthServiceFactory(config);
+
+            BasicService basicService = new BasicService(oauthFactory);
+            basicService.UseOAuth2(userName);
+
+            Response response = null;
+            try
+            {
+                response = basicService.DoMethod(HttpMethod.GET, url, string.Empty);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception from DoMethod: {0}", ex.StackTrace);
+                Console.ReadLine();
+                return;
+            }
+
+            if (response.Error)
+            {
+                int httpStatusCode = (int)response.StatusCode;      // 404
+                string httpStatusMessage = response.StatusMessage;  // Not Found
+
+                Console.WriteLine("{0}: {1}", httpStatusCode, httpStatusMessage);
+            }
+            else
+            {
+                string contentType = response.ContentType;  // application/json
+                string contentString = response.Content;    // { ... }
+
+                Console.WriteLine("{0}: {1}", contentType, contentString);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}</code></pre>
+
+
+		
+	</article> 	
+	<footer>
+		&copy;2014 Pearson Education Inc. Libraries released under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 License</a>. For help with these libraries or the APIs, please use the <a href="https://community.pdn.pearson.com" target="_blank">PDN Developer Community</a>.
+	</footer>
+        <script src="../assets/js/prism.js"></script>
+
+    </body>
+</html>
